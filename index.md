@@ -1,6 +1,6 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll"
-keywords: sample homepage
+title: "CS50 Community Notes"
+keywords: cs50 community
 tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
