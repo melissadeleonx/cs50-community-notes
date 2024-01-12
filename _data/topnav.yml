@@ -4,8 +4,8 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/tomjoht/documentation-theme-jekyll
-    - title: News
+      external_url: https://github.com/melissadeleonx/cs50-community-notes
+    - title: Blog
       url: /news
 
 #Topnav dropdowns

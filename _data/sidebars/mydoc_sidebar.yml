@@ -2,8 +2,20 @@
 
 entries:
 - title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
+  product: |
+      <div id="header" style="color: #1d7aa7;">
+        <h1>study. code. repeat.</h1>
+        <p>Developed by:<br>
+        <strong>Melissa De Leon</strong></p>
+        <a href="https://tech-journey-melissadeleonx.vercel.app/" target="_blank" rel="noopener noreferrer">View My Tech Journey</a>
+        <div id="social-icons">
+          <!-- Social icons using Font Awesome -->
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+  version: CS50 Community Notes 1.0
   folders:
 
   - title:
