@@ -7,9 +7,24 @@ permalink: index.html
 summary: Welcome to the CS50 Community Notes! These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
 ---
 
+<!-- Added some personal touch, feel free to update -->
 <div class="welcome-header">
-  <h1>Welcome <img src="images/ddb50.gif" alt="Welcome GIF" style="max-width: 50px; height: auto; margin-left: 10px; vertical-align: middle;"></h1>
+  <h1 style="font-size: 3em; font-weight: bold; background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text; background-clip: text; color: transparent; background-size: 200% 200%; animation: rainbowShine 8s linear infinite;">
+    Welcome Fellow Learners! <img src="images/ddb50.gif" alt="Welcome GIF" style="max-width: 50px; height: auto; margin-left: 10px; vertical-align: middle;">
+  </h1>
 </div>
+
+<style>
+  @keyframes rainbowShine {
+    0% {
+      background-position: 200% 50%;
+    }
+    100% {
+      background-position: -100% 50%;
+    }
+  }
+</style>
+
 
 {% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
 
