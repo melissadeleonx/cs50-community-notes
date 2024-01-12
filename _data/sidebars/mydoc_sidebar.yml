@@ -3,13 +3,13 @@
 entries:
 - title: sidebar
   product: |
-      <div id="header" style="color: #1d7aa7;">
+      <div id="header" style="color: #216f9b;">
         <h1>study. code. repeat.</h1>
         <p>Developed by:<br>
         <strong>Melissa De Leon</strong></p>
         <a href="https://tech-journey-melissadeleonx.vercel.app/" target="_blank" rel="noopener noreferrer">View My Tech Journey</a>
       </div>
-  version: CS50 Community Notes Version 1.0
+  version: <h3>CS50 Community Notes Version 1.0</h3>
   folders:
 
   - title:
