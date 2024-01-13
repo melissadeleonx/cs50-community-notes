@@ -36,19 +36,19 @@ entries:
       type: homepage
 
     - title: Introduction
-      url: /mydoc_introduction.html
+      # url: /mydoc_introduction.html
       output: web, pdf
 
     - title: CS50 Courses
-      url: /mydoc_supported_features.html
+      # url: /mydoc_supported_features.html
       output: web, pdf
 
     - title: Resources
-      url: /mydoc_support.html
+      # url: /mydoc_support.html
       output: web, pdf
 
     - title: About the Community
-      url: /mydoc_about.html
+      # url: /mydoc_about.html
       output: web, pdf
 
   # Additional Notes extracted from the Lecture Videos and Shorts
@@ -61,7 +61,7 @@ entries:
       output: web, pdf
 
     - title: Week 1
-      url: /mydoc_release_notes_50.html
+      # url: /mydoc_release_notes_50.html
       output: web, pdf
 
     - title: Week 2
@@ -69,7 +69,7 @@ entries:
       output: web, pdf
 
     - title: Week 3
-      url: /mydoc_install_jekyll_on_mac.html
+      # url: /mydoc_install_jekyll_on_mac.html
       output: web, pdf
 
     - title: Week 4
@@ -77,27 +77,27 @@ entries:
       output: web, pdf
 
     - title: Week 5
-      url: /mydoc_lists.html
+      # url: /mydoc_lists.html
       output: web, pdf
 
     - title: Week 6
-      url: /mydoc_conditional_logic.html
+      # url: /mydoc_conditional_logic.html
       output: web, pdf
 
     - title: Week 7
-      url: /mydoc_content_reuse.html
+      # url: /mydoc_content_reuse.html
       output: web, pdf
 
     - title: Week 8
-      url: /mydoc_collections.html
+      # url: /mydoc_collections.html
       output: web, pdf
 
     - title: Week 9
-      url: /mydoc_webstorm_text_editor.html
+      # url: /mydoc_webstorm_text_editor.html
       output: web, pdf
 
     - title: Week 10
-      url: /mydoc_atom_text_editor.html
+      # url: /mydoc_atom_text_editor.html
       output: web, pdf
 
   # Helpful Guide to Solve the Practice Problem, Lab and Problem Sets
@@ -127,6 +127,10 @@ entries:
 
     
   - title: Advanced Topics
+    output: web, pdf
+    folderitems:
+
+  - title: Download PDF copies of CS50 Community Notes
     output: web, pdf
     folderitems:
 

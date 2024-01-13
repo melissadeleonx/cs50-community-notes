@@ -28,384 +28,157 @@ summary: Welcome to the CS50 Community Notes! Whether you're in the midst of the
 
 {% include note.html content="Hello 👋, I'm Melissa and I took CS50. Consider joining in and contributing to this website! Explore the GitHub contribution guidelines here, try your hand at GIT by cloning, pushing, and pulling – ready to experience the coding hype?" %}
 
-## Learning Platforms that offer CS50
+## Learning Platforms Offering CS50
 
-Follow these instructions to build the theme.
+CS50, Harvard University's introductory computer science course, is acclaimed for its thorough instruction in fundamental Computer Science and Programming concepts. The course focuses on cultivating computational thinking, abstraction, algorithms, and data structures, equipping students with robust problem-solving skills. Explore the following platforms to access CS50 lectures or enroll in the course:
 
-### 1. Harvard
+### 1. Harvard Extension School
 
-First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
+Many Harvard Extension courses like **CS50 (aka CSCI E-50)** are open enrollment, but students must fulfill certain requirements, such as placement tests, in order to register. For those seeking credit-bearing options and a more formalized learning experience, explore **[Harvard Extension School](https://cs50.harvard.edu/extension/2024/spring/syllabus/){:target="_blank"}**. Visit their official website to find detailed information on enrollment procedures, tuition fees, and potential academic credits associated with CS50.
 
-### 2. EDX
+### 2. CS50x on edX
 
-If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:
+**[edX](https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science){:target="_blank"}** stands out as a leading online learning platform, co-founded by Harvard University and MIT. This platform collaborates with institutions worldwide to provide a diverse array of courses, including the renowned CS50, Harvard University's introductory computer science course.
 
-* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
-* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
+CS50 is readily accessible on edX for free, allowing learners to audit the course. This grants access to lectures, problem sets, and other materials without any financial commitment.
 
-### 3. Etc.
+For those seeking formal recognition, enrolling in CS50 for a verified certificate is an option, albeit with associated fees. This certificate serves as a valuable credential, attesting to the learner's completion and proficiency in the course.
 
-In case you haven't installed Bundler, install it:
+{% include note.html content="edX demonstrates a commitment to accessibility by offering up to a 90% discount on verified certificates for learners facing financial constraints. Financial assistance is available in most courses that provide verified certificates." %}
 
-```
-gem install bundler
-```
+### 3. CS50 OpenCourseWare
 
-You'll want [Bundler](http://bundler.io/) to make sure all the Ruby gems needed work well with your project. Bundler sorts out dependencies and installs missing gems or matches up gems with the right versions based on gem dependencies.
+**[CS50 OpenCourseWare](https://cs50.harvard.edu/x/2024/){:target="_blank"}** can be freely accessed without formal registration through edX. However, for a more enriched experience, including progress tracking and official course participation, free registration on edX is recommended. Here's how to make the most of your CS50 OpenCourseWare experience:
 
-### 4. More
+1. Access Without Registration: Explore CS50 OpenCourseWare directly for free, allowing you to peruse course materials and delve into the content without the need for formal registration.
 
-Use this option if you're not planning to publish your Jekyll site using [Github Pages](https://pages.github.com/).
+2. Enhanced Experience with edX: To officially join the course, monitor your progress, and participate in the CS50 community, register for free on edX. This step ensures a comprehensive learning experience with additional features.
 
-Bundler's Gemfile specifies how project dependencies are managed. Although this project includes a Gemfile, this theme doesn't have any dependencies beyond core Jekyll. The Gemfile is used to list gems needed for publishing on Github Pages. **If you're not planning to have Github Pages build your Jekyll project, delete these two files from the theme's root directory:**
+3. Connect to GitHub: For an optimized coding experience, connect your CS50x account to GitHub. This connection facilitates activities in the Codespace, where coding assignments are executed seamlessly.
 
-* Gemfile
-* Gemfile.lock
+4. Visit Your CS50x Account: Once registered on edX, visit your personalized CS50x account at **[cs50.me/cs50x](cs50.me/cs50x){:target="_blank"}** to access resources, submit assignments, and monitor your progress throughout the course.
 
-If you've never run Jekyll on your computer (you can check with `jekyll --version`), you may need to install the jekyll gem:
+{% include note.html content="Free and verified certificates offered are not accredited academic offerings from Harvard or its affiliates. These certificates are intended for self-educational and vocational purposes." %}
 
-```
-gem install jekyll
-```
+### 4. Youtube and FreeCodeCamp
 
-Now run jekyll serve (first change directories (`cd`) to where you downloaded the project):
+CS50's **[YouTube channel](https://www.youtube.com/playlist?list=PLhQjrBD2T380F_inVRXMIHCqLaNUd7bN4){:target="_blank"}** offers a wealth of resources, there are a variety of content such as lectures, shorts, and sections. This platform provides the flexibility to learn at your own pace, allowing you to engage with the material on a familiar video-sharing platform. CS50's YouTube presence extends the reach of the course to a broader audience, making learning accessible to those who prefer the visual and dynamic nature of video content.
 
-```
-jekyll serve
-```
+Additionally, FreeCodeCamp hosts a **[26-hour video of the CS50 course](https://www.youtube.com/watch?v=LfaMVlDaQ24){:target="_blank"}** , providing an alternative avenue for in-depth learning. This extensive video resource on FreeCodeCamp offers a comprehensive experience, allowing learners to immerse themselves in the course content over an extended period.
 
-## Who can take this course?
+### 5. Who can take this course?
 
-You can also use Docker to directly build and run the site on your local machine. Just clone the repo and run the following from your working dir:
-```
-docker-compose build --no-cache && docker-compose up
-```
-The site should now be running at [http://localhost:4000/](http://localhost:4000/).
+**ANYONE. ANYWHERE.** CS50 courses are free for all. But please note that it is well-suited for learners aged 12 and above. Younger learners may require assistance from a parent, and local laws may impact their access to certain services associated with the course.
 
-This is perhaps the easiest way to see how your site would actually look.
+No formal prerequisites are required, but it is highly recommended to review the courses offered to ensure it aligns with your current level of knowledge and learning goals.
 
 ## 11 WEEKS OF EXTRA CS50x Materials
-There are several products in this theme. Each product uses a different sidebar. This is the essence of what makes this theme unique -- different sidebars for different product documentation. The idea is that when users are reading documentation for a specific product, the sidebar navigation should be specific to that product. (You can read more of my thoughts on why multiple sidebars are important in this [blog post](http://idratherbewriting.com/2016/03/23/release-of-documentation-theme-for-jekyll-50/).)
+While the official CS50 website offers a notes section, the CS50 Community Notes serve as a unique compilation of insights derived from video lectures, sections, shorts, and contributions from both current and past students. These supplementary notes are meticulously curated to aid fellow learners on their educational journey. The course's subject matter is organized over 11 weeks, each section subtitled in accordance with the context in which its topics are introduced.
+
+### Week 0: Scratch
+- Computer Science Fundamentals
+- Computational Thinking
+- Problem Solving: Inputs, Outputs
+- Representation: Unary, Binary, Decimal, ASCII, Unicode, RGB
+- Abstraction, Algorithms
+- Running Times, Pseudocode
+- Scratch: Functions, Variables, Boolean Expressions, Conditionals, Loops, Events, Threads
+
+### Week 1: C
+- C Language Basics
+- Source Code, Machine Code, Compiler
+- Correctness, Design, Style
+- Visual Studio Code
+- Syntax Highlighting, Escape Sequences
+- Header Files, Libraries, Manual Pages
+- Types, Conditionals, Variables, Loops
+- Linux, Graphical User Interface (GUI), Command-Line Interface (CLI)
+- Constants, Comments, Pseudocode
+- Operators, Integer Overflow, Floating-Point Imprecision
+
+### Week 2: Arrays
+- Preprocessing, Compiling, Assembling, Linking
+- Debugging
+- Arrays, Strings
+- Command-Line Arguments, Cryptography
+
+### Week 3: Algorithms
+- Searching: Linear Search, Binary Search
+- Sorting: Bubble Sort, Selection Sort, Merge Sort
+- Asymptotic Notation: 𝑂(1), 𝑂(𝑛), 𝑂(log 𝑛), 𝑂(𝑛 log 𝑛)
+- Recursion
+
+### Week 4: Memory
+- Pointers, Segmentation Faults
+- Dynamic Memory Allocation, Stack, Heap
+- Buffer Overflow, File I/O, Images
+
+### Week 5: Data Structures
+- Abstract Data Types
+- Queues, Stacks
+- Linked Lists
+- Trees, Binary Search Trees
+- Hash Tables, Tries
+
+### Week 6: Python
+- Python Basics
+- Functions, Variables, Boolean Expressions, Conditionals, Loops
+- Modules, Packages
+
+### Week 7: SQL
+- SQL Basics
+- Tables, Types, Statements, Constraints
+- Indexes, Keywords, Functions, Transactions
+- Race Conditions, SQL Injection Attacks
+
+### Week 8: HTML, CSS, JavaScript
+- Internet Basics: Routers, TCP/IP, DNS
+- HTTP: URLs, GET, POST
+- HTML: Tags, Attributes
+- Servers, CSS: Properties, Selectors
+- Frameworks, JavaScript: Variables, Conditionals, Loops, Events
+
+### Week 9: Flask
+- Flask Basics
+- Route, Decorators
+- Requests, Responses, Sessions, Cookies
+
+### Week 10: Cybersecurity
+- Passwords, Cracking
+- Ciphers, Encryption
+- Two-Factor Authentication
+- Privacy
+
+### Week 11: Artificial Intelligence
+- Language Models (LLMs)
+- Prompt Engineering, Decision Trees
+- Minimax, Machine Learning, Reinforcement
+- Generative AI, Transformer Architecture
+
+**Download PDF Version of CS50 Community Notes [here](#).**
+
+## Frequently Asked Questions
+
+For questions related to tracking progress, signing up, or assignment submissions, we recommend checking the official CS50 website's **[FAQ page](https://cs50.harvard.edu/x/2024/faqs/){:target="_blank"}**. The official FAQ page provides comprehensive answers to common queries and ensures accurate and up-to-date information.
+
+Our community is available to assist you with questions and provide additional guidance beyond the official FAQ. Feel free to engage in discussions, seek clarification, or share insights with fellow learners. While we offer valuable community-driven resources, certain inquiries are best addressed through the official channels.
+
+Thank you for being part of our learning community!
+
+## Problem Set Guide
+
+
+## CS50 Projects Showcase
+
+## CS50 Study Group
+
+## CS50 Community Notes Forum
+
+## Careers in Tech
 
-The top navigation usually remains the same, because it allows users to navigate across products. But the sidebar navigation adapts to the product.
-
-In each page's frontmatter, you must specify the sidebar you want that page to use. Here's an example of the page frontmatter showing the sidebar property:
-
-<pre>
----
-title: Alerts
-tags: [formatting]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
-summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include."
-<span class="red">sidebar: mydoc_sidebar</span>
-permalink: mydoc_alerts
----
-</pre>
-
-The `sidebar: mydoc_sidebar` refers to the \_data/sidebars/mydoc_sidebar.yml file.
-
-Note that your sidebar can only have 2 levels (expand the **Tag archives** option to see an example of the second level). Given that each product has its own sidebar, this depth should be sufficient (it's really like 3 levels). Deeper nesting goes against usability recommendations.
-
-You can optionally turn off the sidebar on any page (e.g. landing pages). To turn off the sidebar for a page, you should set the page frontmatter tag as `hide_sidebar: true`.
-
-If you don't declare a sidebar, the `home_sidebar` file gets used as the default because this is the default specified in the config file:
-
-```yaml
--
-  scope:
-    path: ""
-    type: "pages"
-  values:
-    layout: "page"
-    comments: true
-    search: true
-    sidebar: home_sidebar
-    topnav: topnav
-```
-
-If you want to set different sidebar defaults based on different folders for your pages, specify your defaults like this:
-
-```
--
-  scope:
-    path: "pages/mydoc"
-    type: "pages"
-  values:
-    layout: "page"
-    comments: true
-    search: true
-    sidebar: mydoc_sidebar
-    topnav: topnav
-```
-
-This would load the `mydoc_sidebar` for each file in **pages/mydoc**. You could set different defaults for different path scopes.
-
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation].
-
-## Download PDF Copies of CS50 Community Notes
-
-If you want to generate PDF, you'll need a license for [Prince XML](http://www.princexml.com/). You will also need to [install Prince](http://www.princexml.com/doc/installing/).  You can generate PDFs by product (but not for every product on the site combined together into one massive PDF). Prince will work even without a license, but it will imprint a small Prince image on the first page, and you're supposed to buy the license to use it.
-
-If you're on Windows, install [Git Bash client](https://git-for-windows.github.io/) rather than using the default Windows command prompt.
-
-Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-product1.sh
-
-See the section on [Generating PDFs][mydoc_generating_pdfs] for more details about setting the theme up for this output.
-
-
-## Signing Up
-The top navigation works just like the sidebar. You can specify which topnav data file should load by adding a `topnav` property in your page, like this:
-
-```yaml
-topnav: topnav
-```
-
-Here the topnav refers to the `_data/topnav.yml` file.
-
-Because most topnav options will be the same, the `_config.yml` file specifies the topnav file as a default:
-
-```yaml
--
-  scope:
-    path: ""
-    type: "pages"
-  values:
-    layout: "page"
-    comments: true
-    search: true
-    sidebar: home_sidebar
-    topnav: topnav
-```
-
-
-## Tracking your progress
-
-The sidebar data file uses a specific YAML syntax that you must follow. Follow the sample pattern shown in the theme, specically looking at `mydoc_sidebar.yml` as an example: Here's a code sample showing all levels:
-
-```yaml
-entries:
-- title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
-  folders:
-  - title: Overview
-    output: web, pdf
-    folderitems:
-
-    - title: Get started
-      url: /index.html
-      output: web, pdf
-      type: homepage
-
-    - title: Introduction
-      url: /mydoc_introduction.html
-      output: web, pdf
-
-  - title: Release Notes
-    output: web, pdf
-    folderitems:
-
-    - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
-      output: web, pdf
-
-    - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
-      output: web, pdf
-
-  - title: Tag archives
-    output: web
-    folderitems:
-
-    - title: Tag archives overview
-      url: /mydoc_tag_archives_overview.html
-      output: web
-
-      subfolders:
-      - title: Tag archive pages
-        output: web
-        subfolderitems:
-
-        - title: Formatting pages
-          url: /tag_formatting.html
-          output: web
-
-        - title: Navigation pages
-          url: /tag_navigation.html
-          output: web
-
-        - title: Content types pages
-          url: /tag_content_types.html
-          output: web
-```
-
-Each `folder` or `subfolder` must contain a `title` and `output` property. Each `folderitem` or `subfolderitem` must contain a `title`, `url`, and `output` property.
-
-The two outputs available are `web` and `pdf`. (Even if you aren't publishing PDF, you still need to specify `output: web`).
-
-The YAML syntax depends on exact spacing, so make sure you follow the pattern shown in the sample sidebars. See my [YAML tutorial](mydoc_yaml_tutorial) for more details about how YAML works.
-
-{% include note.html content="If you have just one character of spacing off, Jekyll won't build due to the YAML syntax error. You'll see an error message in your console that says \"Error ... did not find expected key while parsing a block mapping at line 22 column 5. Error: Run jekyll build --trace for more information.\" If you encounter this, it usually refers to incorrect indentation or spacing in the YAML file. See the example mydoc_sidebar.yml file to see where your formatting went wrong." %}
-
-Each level must have at least one topic before the next level starts. You can't have a second level that contains multiple third levels without having at least one standalone topic in the second level. If you need a hierarchy that has a folder that contains other folders and no loose topics, use a blank `-` item like this:
-
-```yaml
-entries:
-- title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
-  folders:
-  - title: Overview
-    output: web, pdf
-    folderitems:
-
-    -
-
-  - title: Release Notes
-    output: web, pdf
-    folderitems:
-
-    - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
-      output: web, pdf
-
-    - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
-      output: web, pdf
-
-  - title: Installation
-    output: web, pdf
-    folderitems:
-
-    - title: About Ruby, Gems, Bundler, etc.
-      url: /mydoc_about_ruby_gems_etc.html
-      output: web, pdf
-
-    - title: Install Jekyll on Mac
-      url: /mydoc_install_jekyll_on_mac.html
-      output: web, pdf
-
-    - title: Install Jekyll on Windows
-      url: /mydoc_install_jekyll_on_windows.html
-      output: web, pdf
-```
-
-To accommodate the title page and table of contents in PDF outputs, each product sidebar must list these pages before any other:
-
-```yaml
-- title:
-  output: pdf
-  type: frontmatter
-  folderitems:
-  - title:
-    url: /titlepage
-    output: pdf
-    type: frontmatter
-  - title:
-    url: /tocpage
-    output: pdf
-    type: frontmatter
-```
-
-Leave the output as `output: pdf` for these frontmatter pages so that they don't appear in the web output.
-
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation] and [YAML tutorial][mydoc_yaml_tutorial].
-
-## Code Editors
-
-## Problem Sets, Assignments, and Assessments
-
-The theme integrates [Commento.io](https://commento.io/) for comments below pages and posts. (This commenting service doesn't inject controversial tracking ads like Disqus does.) You will need to Commento.io account + plan ($5/month) to authorize Commento with your domain (no other configuration should be required). If you don't want comments, in the \_config.yml file, change the `comments: true` properties (under `defaults`) to `comments: false` in every instance. Then in the commento.html include file (inside \_includes), the `{% raw %}{% unless page.comments == false %} ... {% endunless %}{% endraw %}` logic will not insert the Commentio form.
-
-## Deadlines
-
-This theme uses relative links throughout so that you can view the site offline and not worry about which server or directory you're hosting it. It's common with tech docs to push content to an internal server for review prior to pushing the content to an external server for publication. Because of the need for seamless transferrence from one host to another, the site has to use relative links.
-
-To view pages locally on your machine (without the Jekyll preview server), they need to have the `.html` extension. The `permalink` property in the page's frontmatter (without surrounding slashes) is what pushes the files into the root directory when the site builds.
-
-## Obtaining Your Certificate
-
-When you write pages, include these same frontmatter properties with each page:
-
-```yaml
----
-title: "Some title"
-tags: [sample1, sample2]
-keywords: keyword1, keyword2, keyword3
-last_updated: Month day, year
-summary: "optional summary here"
-sidebar: sidebarname
-permalink: filename.html
----
-```
-
-(You will customize the values for each of these properties, of course.)
-
-For titles, surrounding the title in quotes is optional, but if you have a colon in the title, you must surround the title with quotation marks. If you have a quotation mark inside the title, escape it first with a backlash `\`.
-
-Values for `keywords` get populated into the metadata of the page for SEO.
-
-Values for `tags` must be defined in your \_data/tags.yml list. You also need a corresponding tag file inside the tags folder pages/tags/ that follows the same pattern as the other tag files shown in the tags folder. (Jekyll won't auto-create these tag files.)
-
-If you don't want the mini-TOC to show on a page (such as for the homepage or landing pages), add `toc: false` in the frontmatter.
-
-The `permalink` value should be the same as your filename and include the ".html" file extension.
-
-For more detail, see [Pages][mydoc_pages].
-
-## Learning GIT
-
-You can store your files for each product inside subfolders following the pattern shown in the theme. For example, product1, product2, etc, can be stored in their own subfolders inside the \_pages directory. Inside \_pages, you can store your topics inside sub-subfolders or sub-sub-folders to your heart's content. When Jekyll builds your site, it will pull the topics into the root directory and use the permalink for the URL.
-
-Note that product1, product2, and mydoc are all just sample content to demonstrate how to add multiple products into the theme. You can freely delete that content.
-
-For more information, see [Pages][mydoc_pages] and [Posts][mydoc_posts].
-
-## Youtube Channels that feature CS50 topics
-
-The top navigation bar's menu items are set through the \_data/topnav.yml file. Use the top navigation bar to provide links for navigating from one product to another, or to navigate to external resources.
-
-For external URLs, use `external_url` in the item property, as shown in the example topnav.yml file. For internal links, use `url` the same was you do in the sidebar data files.
-
-Note that the topnav has two sections: `topnav` and `topnav_dropdowns`. The topnav section contains single links, while the `topnav_dropdowns` section contains dropdown menus. The two sections are independent of each other.
-
-
-## Blogs / News
-
-For blog posts, create your markdown files in the \_posts folder following the sample formats. Post file names always begin with the date (YYYY-MM-DD-title).
-
-The news/news.html file displays the posts, and the news_archive.html file shows a yearly history of posts. In documentation, you might use the news to highlight product features outside of your documentation, or to provide release notes and other updates.
-
-See [Posts][mydoc_posts] for more information.
+## Advanced Topics
 
 ## Contribute to the Community
-
-This theme uses [kramdown markdown](http://kramdown.gettalong.org/). kramdown is similar to Github-flavored Markdown, except that when you have text that intercepts list items, the spacing of the intercepting text must align with the spacing of the first character after the space of a numbered list item. Basically, with your list item numbering, use two spaces after the dot in the number, like this:
-
-```
-1.  First item
-2.  Second item
-3.  Third item
-```
-
-When you want to insert paragraphs, notes, code snippets, or other matter in between the list items, use four spaces to indent. The four spaces will line up with the first letter of the list item (the <b>F</b>irst or <b>S</b>econd or <b>T</b>hird).
-
-```
-1.  First item
-
-    ```
-    alert("hello");
-    ```
-
-2.  Second item
-
-    Some pig!
-
-3.  Third item
-```
-
-See the topics under "Formatting" in the sidebar for more information.
 
 
 {% include links.html %}
