@@ -28,22 +28,22 @@ summary: Welcome to the CS50 Community Notes! Whether you're in the midst of the
 
 {% include note.html content="Hello 👋, I'm Melissa and I took CS50. Consider joining in and contributing to this website! Explore the GitHub contribution guidelines here, try your hand at GIT by cloning, pushing, and pulling – ready to experience the coding hype?" %}
 
-## Build the Theme
+## Learning Platforms that offer CS50
 
 Follow these instructions to build the theme.
 
-### 1. Download the theme
+### 1. Harvard
 
 First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
 
-### 2. Install Jekyll
+### 2. EDX
 
 If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:
 
 * [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
 * [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
 
-### 3. Install Bundler
+### 3. Etc.
 
 In case you haven't installed Bundler, install it:
 
@@ -53,7 +53,7 @@ gem install bundler
 
 You'll want [Bundler](http://bundler.io/) to make sure all the Ruby gems needed work well with your project. Bundler sorts out dependencies and installs missing gems or matches up gems with the right versions based on gem dependencies.
 
-### 4. Option 1: Build the Theme (*without* the github-pages gem) {#option1}
+### 4. More
 
 Use this option if you're not planning to publish your Jekyll site using [Github Pages](https://pages.github.com/).
 
@@ -74,25 +74,7 @@ Now run jekyll serve (first change directories (`cd`) to where you downloaded th
 jekyll serve
 ```
 
-### 4. Option 2: Build the Theme (*with* the github-pages gem) {#option2}
-
-If you *are* in fact publishing on Github Pages, leave the Gemfile and Gemfile.lock files in the theme.The Gemfile tells Jekyll to use the github-pages gem. **However, note that you cannot use the normal `jekyll serve` command with this gem due to dependency conflicts between the latest version of Jekyll and Github Pages** (which are noted [briefly here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)).
-
-You need Bundler to resolve these dependency conflicts. Use Bundler to install all the needed Ruby gems:
-
-```
-bundle update
-```
-
-Then *always* use this command to build Jekyll:
-
-```
-bundle exec jekyll serve
-```
-
-If you want to shorten this long command, you can put this code in a file such as jekyll.sh (on a Mac) and then simply type `. jekyll.sh` to build Jekyll.
-
-## Running the site in Docker
+## Who can take this course?
 
 You can also use Docker to directly build and run the site on your local machine. Just clone the repo and run the following from your working dir:
 ```
@@ -102,8 +84,7 @@ The site should now be running at [http://localhost:4000/](http://localhost:4000
 
 This is perhaps the easiest way to see how your site would actually look.
 
-## Configure the sidebar
-
+## 11 WEEKS OF EXTRA CS50x Materials
 There are several products in this theme. Each product uses a different sidebar. This is the essence of what makes this theme unique -- different sidebars for different product documentation. The idea is that when users are reading documentation for a specific product, the sidebar navigation should be specific to that product. (You can read more of my thoughts on why multiple sidebars are important in this [blog post](http://idratherbewriting.com/2016/03/23/release-of-documentation-theme-for-jekyll-50/).)
 
 The top navigation usually remains the same, because it allows users to navigate across products. But the sidebar navigation adapts to the product.
@@ -162,8 +143,18 @@ This would load the `mydoc_sidebar` for each file in **pages/mydoc**. You could 
 
 For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation].
 
-## Top navigation
+## Download PDF Copies of CS50 Community Notes
 
+If you want to generate PDF, you'll need a license for [Prince XML](http://www.princexml.com/). You will also need to [install Prince](http://www.princexml.com/doc/installing/).  You can generate PDFs by product (but not for every product on the site combined together into one massive PDF). Prince will work even without a license, but it will imprint a small Prince image on the first page, and you're supposed to buy the license to use it.
+
+If you're on Windows, install [Git Bash client](https://git-for-windows.github.io/) rather than using the default Windows command prompt.
+
+Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-product1.sh
+
+See the section on [Generating PDFs][mydoc_generating_pdfs] for more details about setting the theme up for this output.
+
+
+## Signing Up
 The top navigation works just like the sidebar. You can specify which topnav data file should load by adding a `topnav` property in your page, like this:
 
 ```yaml
@@ -187,7 +178,8 @@ Because most topnav options will be the same, the `_config.yml` file specifies t
     topnav: topnav
 ```
 
-## Sidebar syntax
+
+## Tracking your progress
 
 The sidebar data file uses a specific YAML syntax that you must follow. Follow the sample pattern shown in the theme, specically looking at `mydoc_sidebar.yml` as an example: Here's a code sample showing all levels:
 
@@ -320,17 +312,19 @@ Leave the output as `output: pdf` for these frontmatter pages so that they don't
 
 For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation] and [YAML tutorial][mydoc_yaml_tutorial].
 
-## Comments
+## Code Editors
+
+## Problem Sets, Assignments, and Assessments
 
 The theme integrates [Commento.io](https://commento.io/) for comments below pages and posts. (This commenting service doesn't inject controversial tracking ads like Disqus does.) You will need to Commento.io account + plan ($5/month) to authorize Commento with your domain (no other configuration should be required). If you don't want comments, in the \_config.yml file, change the `comments: true` properties (under `defaults`) to `comments: false` in every instance. Then in the commento.html include file (inside \_includes), the `{% raw %}{% unless page.comments == false %} ... {% endunless %}{% endraw %}` logic will not insert the Commentio form.
 
-## Relative links and offline viewing
+## Deadlines
 
 This theme uses relative links throughout so that you can view the site offline and not worry about which server or directory you're hosting it. It's common with tech docs to push content to an internal server for review prior to pushing the content to an external server for publication. Because of the need for seamless transferrence from one host to another, the site has to use relative links.
 
 To view pages locally on your machine (without the Jekyll preview server), they need to have the `.html` extension. The `permalink` property in the page's frontmatter (without surrounding slashes) is what pushes the files into the root directory when the site builds.
 
-## Page frontmatter
+## Obtaining Your Certificate
 
 When you write pages, include these same frontmatter properties with each page:
 
@@ -360,7 +354,7 @@ The `permalink` value should be the same as your filename and include the ".html
 
 For more detail, see [Pages][mydoc_pages].
 
-## Where to store your documentation topics
+## Learning GIT
 
 You can store your files for each product inside subfolders following the pattern shown in the theme. For example, product1, product2, etc, can be stored in their own subfolders inside the \_pages directory. Inside \_pages, you can store your topics inside sub-subfolders or sub-sub-folders to your heart's content. When Jekyll builds your site, it will pull the topics into the root directory and use the permalink for the URL.
 
@@ -368,7 +362,7 @@ Note that product1, product2, and mydoc are all just sample content to demonstra
 
 For more information, see [Pages][mydoc_pages] and [Posts][mydoc_posts].
 
-## Configure the top navigation
+## Youtube Channels that feature CS50 topics
 
 The top navigation bar's menu items are set through the \_data/topnav.yml file. Use the top navigation bar to provide links for navigating from one product to another, or to navigate to external resources.
 
@@ -376,15 +370,6 @@ For external URLs, use `external_url` in the item property, as shown in the exam
 
 Note that the topnav has two sections: `topnav` and `topnav_dropdowns`. The topnav section contains single links, while the `topnav_dropdowns` section contains dropdown menus. The two sections are independent of each other.
 
-## Generating PDF
-
-If you want to generate PDF, you'll need a license for [Prince XML](http://www.princexml.com/). You will also need to [install Prince](http://www.princexml.com/doc/installing/).  You can generate PDFs by product (but not for every product on the site combined together into one massive PDF). Prince will work even without a license, but it will imprint a small Prince image on the first page, and you're supposed to buy the license to use it.
-
-If you're on Windows, install [Git Bash client](https://git-for-windows.github.io/) rather than using the default Windows command prompt.
-
-Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-product1.sh
-
-See the section on [Generating PDFs][mydoc_generating_pdfs] for more details about setting the theme up for this output.
 
 ## Blogs / News
 
@@ -394,7 +379,7 @@ The news/news.html file displays the posts, and the news_archive.html file shows
 
 See [Posts][mydoc_posts] for more information.
 
-## Markdown
+## Contribute to the Community
 
 This theme uses [kramdown markdown](http://kramdown.gettalong.org/). kramdown is similar to Github-flavored Markdown, except that when you have text that intercepts list items, the spacing of the intercepting text must align with the spacing of the first character after the space of a numbered list item. Basically, with your list item numbering, use two spaces after the dot in the number, like this:
 
@@ -422,12 +407,5 @@ When you want to insert paragraphs, notes, code snippets, or other matter in bet
 
 See the topics under "Formatting" in the sidebar for more information.
 
-## Automated links
-
-If you want to use an automated system for managing links, see [Automated Links][mydoc_hyperlinks.html#automatedlinks]. This approach automatically creates a list of Markdown references to simplify linking.
-
-## Other instructions
-
-The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.
 
 {% include links.html %}
