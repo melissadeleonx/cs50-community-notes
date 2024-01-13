@@ -180,5 +180,3 @@ Thank you for being part of our learning community!
 
 ## Contribute to the Community
 
-
-{% include links.html %}
