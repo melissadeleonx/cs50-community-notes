@@ -9,7 +9,7 @@ entries:
         <strong>Melissa De Leon</strong></p>
         <a href="https://tech-journey-melissadeleonx.vercel.app/" target="_blank" rel="noopener noreferrer">View My Tech Journey</a>
       </div>
-  version: <h3>CS50 Community Notes Version 1.0</h3>
+  version: CS50 Community Notes Version 1.0
   folders:
 
   - title:
@@ -28,8 +28,9 @@ entries:
   - title: Overview
     output: web, pdf
     folderitems:
-
-    - title: Get started
+      
+      # Implies a collection of essential resources to kickstart one's experience with CS50
+    - title: CS50 Starter Kit 
       url: /index.html
       output: web, pdf
       type: homepage
@@ -38,266 +39,314 @@ entries:
       url: /mydoc_introduction.html
       output: web, pdf
 
-    - title: Supported features
+    - title: CS50 Courses
       url: /mydoc_supported_features.html
       output: web, pdf
 
-    - title: About the theme author
-      url: /mydoc_about.html
-      output: web, pdf
-
-    - title: Support
+    - title: Resources
       url: /mydoc_support.html
       output: web, pdf
 
-  - title: Release Notes
+    - title: About the Community
+      url: /mydoc_about.html
+      output: web, pdf
+
+  # Additional Notes extracted from the Lecture Videos and Shorts
+  - title: 11 Weeks of CS50x Materials
     output: web, pdf
     folderitems:
 
-    - title: 6.0 Release notes
+    - title: Week 0
       url: /mydoc_release_notes_60.html
       output: web, pdf
 
-    - title: 5.0 Release notes
+    - title: Week 1
       url: /mydoc_release_notes_50.html
       output: web, pdf
 
-  - title: Installation
-    output: web, pdf
-    folderitems:
-
-    - title: About Ruby, Gems, Bundler, etc.
+    - title: Week 2
       url: /mydoc_about_ruby_gems_etc.html
       output: web, pdf
 
-    - title: Install Jekyll on Mac
+    - title: Week 3
       url: /mydoc_install_jekyll_on_mac.html
       output: web, pdf
 
-    - title: Install Jekyll on Windows
-      url: /mydoc_install_jekyll_on_windows.html
-      output: web, pdf
-
-  - title: Authoring
-    output: web, pdf
-
-    folderitems:
-    - title: Pages
-      url: /mydoc_pages.html
-      output: web, pdf
-
-    - title: Posts
+    - title: Week 4
       url: /mydoc_posts.html
       output: web, pdf
 
-    - title: Lists
+    - title: Week 5
       url: /mydoc_lists.html
       output: web, pdf
 
-    - title: Conditional logic
+    - title: Week 6
       url: /mydoc_conditional_logic.html
       output: web, pdf
 
-    - title: Content reuse
+    - title: Week 7
       url: /mydoc_content_reuse.html
       output: web, pdf
 
-    - title: Collections
+    - title: Week 8
       url: /mydoc_collections.html
       output: web, pdf
 
-    - title: WebStorm editor tips
+    - title: Week 9
       url: /mydoc_webstorm_text_editor.html
       output: web, pdf
 
-    - title: Atom editor tips
+    - title: Week 10
       url: /mydoc_atom_text_editor.html
       output: web, pdf
 
-  - title: Navigation
+  # Helpful Guide to Solve the Practice Problem, Lab and Problem Sets
+  - title: Problem Set Guide
     output: web, pdf
-
     folderitems:
-    - title: Sidebar navigation
-      url: /mydoc_sidebar_navigation.html
-      output: web, pdf
 
-    - title: YAML tutorial in the context of Jekyll
-      url: /mydoc_yaml_tutorial.html
-      output: web, pdf
+#     - title: Install Jekyll on Windows
+#       url: /mydoc_install_jekyll_on_windows.html
+#       output: web, pdf
 
-    - title: Tags
-      url: /mydoc_tags.html
-      output: web, pdf
-
-    - title: Series
-      url: /mydoc_series.html
-      output: web, pdf
-
-  - title: Formatting
+  - title: CS50 Projects Showcase
     output: web, pdf
-
     folderitems:
-    - title: Tooltips
-      url: /mydoc_adding_tooltips.html
-      output: web, pdf
-
-    - title: Alerts
-      url: /mydoc_alerts.html
-      output: web, pdf
-
-    - title: Icons
-      url: /mydoc_icons.html
-      output: web, pdf
-
-    - title: Images
-      url: /mydoc_images.html
-      output: web, pdf
-
-    - title: Code samples
-      url: /mydoc_code_samples.html
-      output: web, pdf
-
-    - title: Labels
-      url: /mydoc_labels.html
-      output: web, pdf
-
-    - title: Links
-      url: /mydoc_hyperlinks.html
-      output: web, pdf
-
-    - title: Navtabs
-      url: /mydoc_navtabs.html
-      output: web, pdf
-
-    - title: Tables
-      url: /mydoc_tables.html
-      output: web, pdf
-
-    - title: Syntax highlighting
-      url: /mydoc_syntax_highlighting.html
-      output: web, pdf
-
-    - title: Workflow maps
-      url: /mydoc_workflow_maps.html
-      output: web, pdf
-
-  - title: Handling reviews
+  
+  - title: CS50 Study Groups
     output: web, pdf
-
     folderitems:
-    - title: Commenting on files
-      url: /mydoc_commenting_on_files.html
-      output: web, pdf
 
-#    - title: Git collaboration
-#      url: /mydoc_git_collaboration
-#      output: web, pdf
-
-  - title: Publishing
+  - title: CS50 Community Forum
     output: web, pdf
-
     folderitems:
-    - title: Build arguments
-      url: /mydoc_build_arguments.html
-      output: web, pdf
 
-    - title: Themes
-      url: /mydoc_themes.html
-      output: web, pdf
-
-    - title: Generating PDFs
-      url: /mydoc_generating_pdfs.html
-      output: web, pdf
-
-    - title: Help APIs and UI tooltips
-      url: /mydoc_help_api.html
-      output: web, pdf
-
-    - title: Search configuration
-      url: /mydoc_search_configuration.html
-      output: web, pdf
-
-    - title: iTerm profiles
-      url: /mydoc_iterm_profiles.html
-      output: web, pdf
-
-    - title: Pushing builds to server
-      url: /mydoc_push_build_to_server.html
-      output: web, pdf
-
-    - title: Publishing on Github Pages
-      url: /mydoc_publishing_github_pages.html
-      output: web, pdf
-
-  - title: Special layouts
+  - title: Careers in Tech
     output: web, pdf
-
     folderitems:
-    - title: Knowledge-base layout
-      url: /mydoc_kb_layout.html
-      output: web, pdf
 
-    - title: Glossary layout
-      url: /mydoc_glossary.html
-      output: web, pdf
-
-    - title: FAQ layout
-      url: /mydoc_faq_layout.html
-      output: web, pdf
-
-    - title: Shuffle layout
-      url: /mydoc_shuffle.html
-      output: web, pdf
-
-  - title: Troubleshooting
+    
+  - title: Advanced Topics
     output: web, pdf
-
     folderitems:
 
-    - title: Troubleshooting
-      url: /mydoc_troubleshooting.html
-      output: web, pdf
+#     folderitems:
+#     - title: Pages
+#       url: /mydoc_pages.html
+#       output: web, pdf
 
-  - title: Tag archives
-    output: web
-    folderitems:
+#     - title: Posts
+#       url: /mydoc_posts.html
+#       output: web, pdf
 
-    - title: Tag archives overview
-      url: /mydoc_tag_archives_overview.html
-      output: web
+#     - title: Lists
+#       url: /mydoc_lists.html
+#       output: web, pdf
 
-      subfolders:
-      - title: Tag archive pages
-        output: web
-        subfolderitems:
+#     - title: Conditional logic
+#       url: /mydoc_conditional_logic.html
+#       output: web, pdf
 
-        - title: Formatting pages
-          url: /tag_formatting.html
-          output: web
+#     - title: Content reuse
+#       url: /mydoc_content_reuse.html
+#       output: web, pdf
 
-        - title: Navigation pages
-          url: /tag_navigation.html
-          output: web
+#     - title: Collections
+#       url: /mydoc_collections.html
+#       output: web, pdf
 
-        - title: Content types pages
-          url: /tag_content_types.html
-          output: web
+#     - title: WebStorm editor tips
+#       url: /mydoc_webstorm_text_editor.html
+#       output: web, pdf
 
-        - title: Publishing pages
-          url: /tag_publishing.html
-          output: web
+#     - title: Atom editor tips
+#       url: /mydoc_atom_text_editor.html
+#       output: web, pdf
 
-        - title: Special layout pages
-          url: /tag_special_layouts.html
-          output: web
+#   - title: Navigation
+#     output: web, pdf
 
-        - title: Collaboration pages
-          url: /tag_collaboration.html
-          output: web
+#     folderitems:
+#     - title: Sidebar navigation
+#       url: /mydoc_sidebar_navigation.html
+#       output: web, pdf
 
-        - title: Troubleshooting pages
-          url: /tag_troubleshooting.html
-          output: web
+#     - title: YAML tutorial in the context of Jekyll
+#       url: /mydoc_yaml_tutorial.html
+#       output: web, pdf
+
+#     - title: Tags
+#       url: /mydoc_tags.html
+#       output: web, pdf
+
+#     - title: Series
+#       url: /mydoc_series.html
+#       output: web, pdf
+
+#   - title: Formatting
+#     output: web, pdf
+
+#     folderitems:
+#     - title: Tooltips
+#       url: /mydoc_adding_tooltips.html
+#       output: web, pdf
+
+#     - title: Alerts
+#       url: /mydoc_alerts.html
+#       output: web, pdf
+
+#     - title: Icons
+#       url: /mydoc_icons.html
+#       output: web, pdf
+
+#     - title: Images
+#       url: /mydoc_images.html
+#       output: web, pdf
+
+#     - title: Code samples
+#       url: /mydoc_code_samples.html
+#       output: web, pdf
+
+#     - title: Labels
+#       url: /mydoc_labels.html
+#       output: web, pdf
+
+#     - title: Links
+#       url: /mydoc_hyperlinks.html
+#       output: web, pdf
+
+#     - title: Navtabs
+#       url: /mydoc_navtabs.html
+#       output: web, pdf
+
+#     - title: Tables
+#       url: /mydoc_tables.html
+#       output: web, pdf
+
+#     - title: Syntax highlighting
+#       url: /mydoc_syntax_highlighting.html
+#       output: web, pdf
+
+#     - title: Workflow maps
+#       url: /mydoc_workflow_maps.html
+#       output: web, pdf
+
+#   - title: Handling reviews
+#     output: web, pdf
+
+#     folderitems:
+#     - title: Commenting on files
+#       url: /mydoc_commenting_on_files.html
+#       output: web, pdf
+
+# #    - title: Git collaboration
+# #      url: /mydoc_git_collaboration
+# #      output: web, pdf
+
+#   - title: Publishing
+#     output: web, pdf
+
+#     folderitems:
+#     - title: Build arguments
+#       url: /mydoc_build_arguments.html
+#       output: web, pdf
+
+#     - title: Themes
+#       url: /mydoc_themes.html
+#       output: web, pdf
+
+#     - title: Generating PDFs
+#       url: /mydoc_generating_pdfs.html
+#       output: web, pdf
+
+#     - title: Help APIs and UI tooltips
+#       url: /mydoc_help_api.html
+#       output: web, pdf
+
+#     - title: Search configuration
+#       url: /mydoc_search_configuration.html
+#       output: web, pdf
+
+#     - title: iTerm profiles
+#       url: /mydoc_iterm_profiles.html
+#       output: web, pdf
+
+#     - title: Pushing builds to server
+#       url: /mydoc_push_build_to_server.html
+#       output: web, pdf
+
+#     - title: Publishing on Github Pages
+#       url: /mydoc_publishing_github_pages.html
+#       output: web, pdf
+
+#   - title: Special layouts
+#     output: web, pdf
+
+#     folderitems:
+#     - title: Knowledge-base layout
+#       url: /mydoc_kb_layout.html
+#       output: web, pdf
+
+#     - title: Glossary layout
+#       url: /mydoc_glossary.html
+#       output: web, pdf
+
+#     - title: FAQ layout
+#       url: /mydoc_faq_layout.html
+#       output: web, pdf
+
+#     - title: Shuffle layout
+#       url: /mydoc_shuffle.html
+#       output: web, pdf
+
+#   - title: Troubleshooting
+#     output: web, pdf
+
+#     folderitems:
+
+#     - title: Troubleshooting
+#       url: /mydoc_troubleshooting.html
+#       output: web, pdf
+
+#   - title: Tag archives
+#     output: web
+#     folderitems:
+
+#     - title: Tag archives overview
+#       url: /mydoc_tag_archives_overview.html
+#       output: web
+
+#       subfolders:
+#       - title: Tag archive pages
+#         output: web
+#         subfolderitems:
+
+#         - title: Formatting pages
+#           url: /tag_formatting.html
+#           output: web
+
+#         - title: Navigation pages
+#           url: /tag_navigation.html
+#           output: web
+
+#         - title: Content types pages
+#           url: /tag_content_types.html
+#           output: web
+
+#         - title: Publishing pages
+#           url: /tag_publishing.html
+#           output: web
+
+#         - title: Special layout pages
+#           url: /tag_special_layouts.html
+#           output: web
+
+#         - title: Collaboration pages
+#           url: /tag_collaboration.html
+#           output: web
+
+#         - title: Troubleshooting pages
+#           url: /tag_troubleshooting.html
+#           output: web
 
 # Copyright 2021 Google LLC
