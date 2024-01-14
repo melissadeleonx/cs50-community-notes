@@ -106,7 +106,7 @@ sidebars:
 - product2_sidebar
 - other
 
-description: "<CS50 Community Notes is a collaborative platform where students and teachers come together to share valuable insights, tips, and additional documentation related to CS50 and other technical subjects. This website serves as a hub for the CS50 community, providing a space for the exchange of knowledge and fostering a supportive learning environment."
+description: "CS50 Community Notes is a collaborative platform where students and teachers come together to share valuable insights, tips, and additional documentation related to CS50 and other technical subjects. This website serves as a hub for the CS50 community, providing a space for the exchange of knowledge and fostering a supportive learning environment."
 
 # the description is used in the feed.xml file
 

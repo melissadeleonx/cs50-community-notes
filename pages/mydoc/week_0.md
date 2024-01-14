@@ -5,7 +5,7 @@ keywords:
 summary: "Scratch is a visual programming language that allows users to create interactive stories, games, and animations. It's designed to be beginner-friendly, using a drag-and-drop interface with colorful code blocks."
 sidebar: mydoc_sidebar
 permalink: week_0
-folder: cs50
+folder: mydoc
 ---
 
 # CS50 Week 0: Let's Start from Scratch!

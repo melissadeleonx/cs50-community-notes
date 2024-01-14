@@ -70,7 +70,7 @@ Additionally, FreeCodeCamp hosts a **[26-hour video of the CS50 course](https://
 
 No formal prerequisites are required, but it is highly recommended to review the courses offered to ensure it aligns with your current level of knowledge and learning goals.
 
-## 11 WEEKS OF EXTRA CS50x Materials
+## 12 WEEKS OF EXTRA CS50x Materials
 While the official CS50 website offers a notes section, the CS50 Community Notes serve as a unique compilation of insights derived from video lectures, sections, shorts, and contributions from both current and past students. These supplementary notes are meticulously curated to aid fellow learners on their educational journey. The course's subject matter is organized over 11 weeks, each section subtitled in accordance with the context in which its topics are introduced.
 
 ### Week 0: Scratch

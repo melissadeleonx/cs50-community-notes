@@ -31,7 +31,7 @@ entries:
       
       # Implies a collection of essential resources to kickstart one's experience with CS50
     - title: CS50 Starter Kit 
-      url: /
+      url: /index
       output: web, pdf
       type: homepage
 
@@ -43,7 +43,7 @@ entries:
       # url: /mydoc_supported_features.html
       output: web, pdf
 
-    - title: Resources
+    - title: Additional Resources
       # url: /mydoc_support.html
       output: web, pdf
 
@@ -52,7 +52,7 @@ entries:
       output: web, pdf
 
   # Additional Notes extracted from the Lecture Videos and Shorts
-  - title: 11 Weeks of CS50x Materials
+  - title: 12 Weeks of CS50x Materials
     output: web, pdf
     folderitems:
 
@@ -61,43 +61,47 @@ entries:
       output: web, pdf
 
     - title: Week 1
-      # url: /mydoc_release_notes_50.html
+      url: /week_1
       output: web, pdf
 
     - title: Week 2
-      # url: /mydoc_about_ruby_gems_etc.html
+      url: /week_2
       output: web, pdf
 
     - title: Week 3
-      # url: /mydoc_install_jekyll_on_mac.html
+      url: /week_3
       output: web, pdf
 
     - title: Week 4
-      # url: /mydoc_posts.html
+      url: /week_4
       output: web, pdf
 
     - title: Week 5
-      # url: /mydoc_lists.html
+      url: /week_5
       output: web, pdf
 
     - title: Week 6
-      # url: /mydoc_conditional_logic.html
+      url: /week_6
       output: web, pdf
 
     - title: Week 7
-      # url: /mydoc_content_reuse.html
+      url: /week_7
       output: web, pdf
 
     - title: Week 8
-      # url: /mydoc_collections.html
+      url: /week_8
       output: web, pdf
 
     - title: Week 9
-      # url: /mydoc_webstorm_text_editor.html
+      url: /week_9
       output: web, pdf
 
     - title: Week 10
-      # url: /mydoc_atom_text_editor.html
+      url: /week_10
+      output: web, pdf
+
+    - title: Week 11
+      url: /week_11
       output: web, pdf
 
   # Helpful Guide to Solve the Practice Problem, Lab and Problem Sets
