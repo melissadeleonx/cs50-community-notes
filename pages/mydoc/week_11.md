@@ -5,5 +5,5 @@ keywords:
 summary: ""
 sidebar: mydoc_sidebar
 permalink: week_11
-folder: mydoc
+folder: cs50
 ---
