@@ -5,9 +5,9 @@ entries:
   product: |
       <div id="header" style="color: #216f9b;">
         <h1>study. code. repeat.</h1>
-        <p>Developed by:<br>
-        <strong>Melissa De Leon</strong></p>
-        <a href="https://tech-journey-melissadeleonx.vercel.app/" target="_blank" rel="noopener noreferrer">View My Tech Journey</a>
+        <p>Maintained by:<br>
+        <strong>CS50 Github Community</strong></p>
+        <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank" rel="noopener noreferrer">Join Us!</a>
       </div>
   version: CS50 Community Notes Version 1.0
   folders:
