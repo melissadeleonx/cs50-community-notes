@@ -31,7 +31,7 @@ entries:
       
       # Implies a collection of essential resources to kickstart one's experience with CS50
     - title: CS50 Starter Kit 
-      url: /index.html
+      url: /
       output: web, pdf
       type: homepage
 
@@ -57,7 +57,7 @@ entries:
     folderitems:
 
     - title: Week 0
-      # url: /mydoc_release_notes_60.html
+      url: /week_0
       output: web, pdf
 
     - title: Week 1

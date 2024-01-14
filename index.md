@@ -58,8 +58,6 @@ For those seeking formal recognition, enrolling in CS50 for a verified certifica
 
 4. Visit Your CS50x Account: Once registered on edX, visit your personalized CS50x account at **[cs50.me/cs50x](cs50.me/cs50x){:target="_blank"}** to access resources, submit assignments, and monitor your progress throughout the course.
 
-{% include note.html content="Free and verified certificates offered are not accredited academic offerings from Harvard or its affiliates. These certificates are intended for self-educational and vocational purposes." %}
-
 ### 4. Youtube and FreeCodeCamp
 
 CS50's **[YouTube channel](https://www.youtube.com/playlist?list=PLhQjrBD2T380F_inVRXMIHCqLaNUd7bN4){:target="_blank"}** offers a wealth of resources, there are a variety of content such as lectures, shorts, and sections. This platform provides the flexibility to learn at your own pace, allowing you to engage with the material on a familiar video-sharing platform. CS50's YouTube presence extends the reach of the course to a broader audience, making learning accessible to those who prefer the visual and dynamic nature of video content.
