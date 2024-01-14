@@ -80,7 +80,7 @@ Unary is the simplest numeral system. It represents numbers using only one symbo
 ### Binary System
 
 Binary, the language of computers, employs a base-2 numeral system using only '0' and '1'. Every piece of data in a computer is fundamentally stored and processed in binary. It's the backbone of machine language and digital communication.
-
+   
 ### Decimal System
 
 Decimal is our everyday base-10 numeral system, using digits 0-9. Decimal is familiar to us humans and is often used for human-readable representations of numbers in various contexts.
