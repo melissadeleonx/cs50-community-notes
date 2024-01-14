@@ -12,7 +12,7 @@ site_title: CS50 Community Notes
 company_name: Copyright 2024 Melissa De Leon
 # this appears in the footer
 
-github_editme_path: melissadeleonx/cs50-community-notes/blob/gh-pages/
+github_editme_path: melissadeleonx/cs50-community-notes/blob/main/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
@@ -106,7 +106,8 @@ sidebars:
 - product2_sidebar
 - other
 
-description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+description: "<CS50 Community Notes is a collaborative platform where students and teachers come together to share valuable insights, tips, and additional documentation related to CS50 and other technical subjects. This website serves as a hub for the CS50 community, providing a space for the exchange of knowledge and fostering a supportive learning environment."
+
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
@@ -117,4 +118,4 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 github: [metadata]
 
 
-# Copyright 2021 Google LLC
+# Copyright 2024 CS50 Community Notes

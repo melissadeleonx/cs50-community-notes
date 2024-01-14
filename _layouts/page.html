@@ -40,9 +40,9 @@ layout: default
 
 
    {% if site.github_editme_path %}
-        <a target="_blank" rel="noopener" href="https://github.com/melissadeleonx/cs50-community-notes/blob/main/{{ page.path }}" class="btn btn-default githubEditButton" role="button">
-            <i class="fa fa-github fa-lg"></i> Edit me
-        </a>
+  <a target="_blank" rel="noopener" href="https://github.com/{{ site.github_editme_path }}{{ page.path }}" class="btn btn-default githubEditButton" role="button">
+    <i class="fa fa-github fa-lg"></i> Edit me
+  </a>
     {% endif %}
 
 
@@ -60,7 +60,7 @@ layout: default
         {% endif %}
     </div>
 
-{% include commento.html %}
+{% include note.html content="The Comments and Discussion Section will soon be available 💬" %}
 
 </div>
 
@@ -68,4 +68,4 @@ layout: default
 
 {% include footer.html %}
 
-{% comment %} Copyright 2021 Google LLC {% endcomment %}
+{% comment %} Copyright 2024 CS50 Community Notes {% endcomment %}
