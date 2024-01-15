@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Welcome to the <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank"><strong>CS50 Community Notes</strong></a> repository! This repository is a collaborative effort to compile and share notes related to CS50, the Introductory Computer Science course offered by Harvard University.
+  Welcome to the <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank"><strong>CS50 Community Notes</strong></a> repository! This repository is a collaborative effort to compile and share notes related to <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank"><strong>CS50</strong></a>, the Introductory Computer Science course offered by Harvard University.
 </p>
 
 <p align="center">
@@ -13,19 +13,16 @@
   <img src="https://img.shields.io/badge/Version-1.0-blue"/ >
 </p>
 
-<div style="width: 100%; height: 300px;" id="lottie-container"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
-<script>
-  window.onload = function () {
-    lottie.loadAnimation({
-      container: document.getElementById('lottie-container'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'https://lottie.host/e392d49a-5c15-43a9-a83d-9148e1159b6b/KLEcCMdGVv.json', 
-    });
-  };
-</script>
+![cs50-community-notes](/cs50-community-notes.png)
+
+<p align="center">
+  <a href="https://twitter.com/melissadeleonx">
+    <img src="https://img.shields.io/badge/follow-%40melissadeleonx%203.5k+-1DA1F2?label=XTwitter&logo=twitter&style=for-the-badge&color=blue" alt="Melissa De Leon's Twitter"/>
+  </a>
+  <a href="https://www.linkedin.com/in/melissadeleonx/">
+    <img src="https://img.shields.io/badge/LinkedIn-melissadeleonx-blue?style=for-the-badge&logo=linkedin" alt="Melissa De Leon's LinkedIn"/>
+  </a>
+</p>
 
 
 
