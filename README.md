@@ -13,20 +13,19 @@
   <img src="https://img.shields.io/badge/Version-1.0-blue"/ >
 </p>
 
-<div style="display: flex; justify-content: center;">
-  <div style="width: 400px; height: 400px;" id="lottie-container"></div>
-</div>
+<iframe
+  src="https://lottiefiles.com/iframe/e392d49a-5c15-43a9-a83d-9148e1159b6b/KLEcCMdGVv"
+  width="100%"
+  height="300px"
+  frameborder="0"
+  style="overflow:hidden;background:transparent;"
+  allowfullscreen="allowfullscreen"
+  mozallowfullscreen="mozallowfullscreen"
+  msallowfullscreen="msallowfullscreen"
+  oallowfullscreen="oallowfullscreen"
+  webkitallowfullscreen="webkitfullscreen"
+></iframe>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
-<script>
-  lottie.loadAnimation({
-    container: document.getElementById('lottie-container'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://lottie.host/e392d49a-5c15-43a9-a83d-9148e1159b6b/KLEcCMdGVv.json',
-  });
-</script>
 
 
 Primary Source: Harvard University CS50
