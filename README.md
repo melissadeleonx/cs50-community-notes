@@ -61,6 +61,12 @@ CS50 Community Notes is built using the following technologies:
 
 ## Getting Started
 
+### GIT
+If you're not familiar with Git, learn the basics at **CS50: How to GIT?**
+
+### Installing Jekyll:
+For instructions on installing Jekyll, visit the **Jekyll Installation Guide**.
+
 ## Contributing
 
 We'd love your help in improving CS50 Community Notes! Follow these simple steps:
@@ -69,12 +75,31 @@ We'd love your help in improving CS50 Community Notes! Follow these simple steps
 Click on the "Fork" button at the top right to create your own copy.
 
 ### 2. Clone your Fork:
-```bash
-git clone https://github.com/your-username/cs50-community-notes.git
+ ```
+    git clone https://github.com/your-username/cs50-community-notes.git
+ ```
 ### 3.  Create a New Branch:
-    ```bash
-        cd cs50-community-notes
-### 3. Navigate to the Repository:
+ ```
+    git checkout -b feature/my-contribution
+ ```
+
+### 4. Make your Changes:
+Add new notes, improve existing ones, or fix errors.
+
+### 5. Commit your Changes:
+```
+    git commit -m "Add meaningful commit message"
+```
+### 6. Push Changes to your Fork:
+```
+git push origin feature/my-contribution
+```
+
+### 7. Create Pull Request
+* Visit your fork on GitHub.
+* Click on "New pull request" and describe your changes.
+
+For more detailed guidelines, check the **CONTRIBUTING.md** file.
 
 ## Code of Conduct
 Please review our Code of Conduct before participating in this project. We strive to maintain a welcoming and inclusive community for everyone.
