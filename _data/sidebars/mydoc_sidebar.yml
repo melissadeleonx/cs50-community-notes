@@ -39,7 +39,7 @@ entries:
       # url: /mydoc_introduction.html
       output: web, pdf
 
-    - title: CS50 Courses
+    - title: CS50 Courses and Links
       # url: /mydoc_supported_features.html
       output: web, pdf
 
@@ -132,7 +132,7 @@ entries:
     
   - title: Advanced Topics
     output: web, pdf
-    folderitems:
+    folderitems: 
 
   - title: Download PDF copies of CS50 Community Notes
     output: web, pdf
