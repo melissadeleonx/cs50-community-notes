@@ -6,6 +6,15 @@
 <title>{{ page.title }} | {{ site.site_title }}</title>
 <link rel="stylesheet" href="{{ "css/syntax.css" }}">
 
+<!-- Social Media Sharing -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+<meta property="og:image" content="{{ page.image | default: "images\favicon.ico" | prepend: site.url }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | append: "/" }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="website">
+
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
 <link rel="stylesheet" href="css/modern-business.css">
@@ -40,4 +49,4 @@
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
 
-{% comment %} Copyright 2021 Google LLC {% endcomment %}
+{% comment %} Copyright 2023 CS50 Community Notes {% endcomment %}
