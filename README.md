@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Welcome to the <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank"><strong>CS50 Community Notes</strong></a> repository! This repository is a collaborative effort to compile and share notes related to <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank"><strong>CS50</strong></a>, the Introductory Computer Science course offered by Harvard University.
+  Welcome to the <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank"><strong>CS50 Community Notes</strong></a> repository! This repository is a collaborative effort to compile and share notes related to CS50, the Introductory Computer Science course offered by <a href="https://cs50.harvard.edu/x/2024/" target="_blank"><strong>Harvard University.</strong></a>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/Version-1.0-blue"/ >
 </p>
 
-![cs50-community-notes](/cs50-community-notes.png)
+![cs50-community-notes](images/cs50-community-notes.png)
 
 <p align="center">
   <a href="https://twitter.com/melissadeleonx">
