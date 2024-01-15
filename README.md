@@ -61,26 +61,23 @@ CS50 Community Notes is built using the following technologies:
 
 ## Getting Started
 
-To get started with CS50 Community Notes, follow these steps:
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/melissadeleonx/cs50-community-notes.git
+## Contributing
 
-2 **Navigate to the Repository:**
+We'd love your help in improving CS50 Community Notes! Follow these simple steps:
 
-```html
-<div style="width: 100%; height: 300px;" id="lottie-container"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.js"></script>
-<script>
-  // Replace the URL with your Lottie animation URL
-  var animationData = "https://lottie.host/e392d49a-5c15-43a9-a83d-9148e1159b6b/KLEcCMdGVv.json";
-  
-  // Set up the Lottie player
-  var anim = lottie.loadAnimation({
-    container: document.getElementById('lottie-container'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    animationData: animationData
-  });
-</script>
+### 1. Fork the Repository:
+Click on the "Fork" button at the top right to create your own copy.
+
+### 2. Clone your Fork:
+```bash
+git clone https://github.com/your-username/cs50-community-notes.git
+### 3.  Create a New Branch:
+    ```bash
+        cd cs50-community-notes
+### 3. Navigate to the Repository:
+
+## Code of Conduct
+Please review our Code of Conduct before participating in this project. We strive to maintain a welcoming and inclusive community for everyone.
+
+## License
+This project is licensed under the MIT License. By contributing to CS50 Community Notes, you agree that your contributions will be licensed under the MIT License.
