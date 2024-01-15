@@ -152,7 +152,5 @@ In 2003, the MIT Media Lab developed Scratch to make programming accessible to e
 
 ## YouTube Scratch Tutorials Recommendations
 
-1. [Scratch Tutorial for Beginners](https://www.youtube.com/watch?v=4T40L251FG0) by ScratchEd
-2. [Creating Games in Scratch](https://www.youtube.com/watch?v=beVf_WvR1DU) by The Coding Train
-3. [Scratch 3.0 Tutorials](https://www.youtube.com/playlist?list=PLz8USJen3JNeNhOSBFpTgUCZbz5xJvhwP) by Scratch School
+
 
