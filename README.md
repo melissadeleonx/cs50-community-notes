@@ -16,10 +16,10 @@
 ![cs50-community-notes](images/cs50-community-notes.png)
 
 <p align="center">
-  <a href="https://twitter.com/melissadeleonx">
+  <a href="https://twitter.com/melissadeleonx" target="_blank">
     <img src="https://img.shields.io/badge/follow-%40melissadeleonx%203.5k+-1DA1F2?label=XTwitter&logo=twitter&style=for-the-badge&color=blue" alt="Melissa De Leon's Twitter"/>
   </a>
-  <a href="https://tech-journey-melissadeleonx.vercel.app/">
+  <a href="https://tech-journey-melissadeleonx.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-melissadeleonx-blue?style=for-the-badge&logo=linkedin" alt="Melissa De Leon's LinkedIn"/>
   </a>
 </p>
@@ -49,15 +49,15 @@ CS50 Community Notes is built using the following technologies:
 
 ### Contributors
 
-- Built by: **[Melissa De Leon](https://github.com/melissadeleonx)**
-- Updated and maintained by: **[GitHub CS50 Community](https://github.com)**
+- Built by: **[Melissa De Leon](https://github.com/melissadeleonx){:target="_blank"}**
+- Updated and maintained by: **[GitHub CS50 Community](https://github.com){:target="_blank"}**
 
 ### Attribution
 
-- Primary Source: [Harvard University CS50](https://cs50.harvard.edu/)
-- The website is built using [Jekyll](https://jekyllrb.com/)
-- Deployed on [GitHub](https://melissadeleonx.github.io/cs50-community-notes/)
-- Employs the [Documentation Jekyll theme](https://idratherbewriting.com/documentation-theme-jekyll/)
+- Primary Source: [Harvard University CS50](https://cs50.harvard.edu/){:target="_blank"}
+- The website is built using [Jekyll](https://jekyllrb.com/){:target="_blank"}
+- Deployed on [GitHub](https://melissadeleonx.github.io/cs50-community-notes/){:target="_blank"}
+- Employs the [Documentation Jekyll theme](https://idratherbewriting.com/documentation-theme-jekyll/){:target="_blank"}
 
 ## Getting Started
 
