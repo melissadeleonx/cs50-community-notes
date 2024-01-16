@@ -185,3 +185,95 @@ Here, the variable yetAnotherNumber is declared first and initialized with the v
 
 ## Operators
 **Operators** in C are used to perform various operations on operands, which can be variables, constants, or expressions. These operations range from basic arithmetic calculations to logical comparisons.
+
+### Assignment Operator (=)
+
+The assignment operator (=) is used to assign a value to a variable in C.
+
+```vbnet
+    int x = 10; // Declare an integer variable x and assign the value 10 to it
+```
+
+{% include note.html content="Equality (==) vs. Assignment (=): Be cautious about using the correct operator. == is used for comparison, while = is used for assignment."
+%}
+
+### Arithmetic Operators (+, -, *, /, %)
+
+Arithmetic operators perform basic mathematical operations on numeric values.
+
+```vbnet
+    int x = y + 1;  // Addition
+    x = x * 5;      // Multiplication
+    int m = 13 % 4; // Modulus (gives the remainder of division)
+```
+
+### Shorthand Assignment Operators (+=, -=, *=, /=, %=)
+
+Shorthand assignment operators combine an arithmetic operation with assignment in a more concise form.
+
+```vbnet
+    x += 5; // Equivalent to x = x + 5
+```
+{% include note.html content="Shorthand Assignment Operators: They provide a concise way to update variable values and can make your code more readable." %}
+
+
+### Increment and Decrement Operators (++ and --)
+
+Increment (++) adds 1 to a variable, and decrement (--) subtracts 1 from a variable.
+
+```vbnet
+    x++; // Equivalent to x = x + 1
+```
+
+### Modulus Operator (%)
+
+The modulus operator (%) calculates the remainder when dividing two numbers.
+
+```vbnet
+    int m = 13 % 4; // m will be 1 (remainder of 13 divided by 4)
+```
+
+### Boolean Expressions and Logical Operators (&&, ||, !)
+
+Boolean expressions evaluate to true or false. Logical operators perform operations on Boolean values.
+
+```vbnet
+    int x = 10, y = 5;
+    if (x > y && y != 0) {
+        // Code to execute if both conditions are true
+    }
+
+    if (x < y || y == 0) {
+        // Code to execute if at least one condition is true
+    }
+
+    if (!(x == y)) {
+        // Code to execute if the condition is false
+    }
+```
+
+{% include note.html content="Logical Operators (&&, ||, !): These are commonly used in conditional statements and loops to control program flow based on conditions."
+%}
+
+### Relational Operators (<, >, <=, >=, ==, !=)
+
+Relational operators compare values and return true or false based on the comparison.
+
+```vbnet
+    if (x < y) {
+    // Code to execute if x is less than y
+    }
+
+    if (x >= y) {
+        // Code to execute if x is greater than or equal to y
+    }
+
+    if (x == y) {
+        // Code to execute if x is equal to y
+    }
+
+    if (x != y) {
+        // Code to execute if x is not equal to y
+    }
+```
+
