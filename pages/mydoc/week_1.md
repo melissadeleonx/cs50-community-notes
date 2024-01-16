@@ -277,3 +277,157 @@ Relational operators compare values and return true or false based on the compar
     }
 ```
 
+## Conditional Statements
+
+Conditional statements are essential in programming because they enable your code to make decisions and respond dynamically to different situations. They provide the logic and structure necessary for creating programs that can adapt, respond to user input, handle errors, and execute different actions based on changing circumstances. They are a fundamental building block in programming that enhances the versatility and functionality of your software.
+
+### If Statements
+
+The `if`statement in C allows your program to make decisions based on the evaluation of a Boolean expression. If the expression is true, the code inside the curly braces is executed; otherwise, it is skipped.
+
+```vbnet
+    int x = 10;
+    if (x < 20) {
+    // Code to execute if x is less than 20
+    }
+```
+
+### If-Else Statements
+
+The `if-else` statement extends the if statement by providing an alternative branch of code to execute when the Boolean expression is false.
+
+```vbnet
+    int x = 25;
+    if (x < 20) {
+        // Code to execute if x is less than 20
+    } else {
+        // Code to execute if x is 20 or greater
+    }
+```
+### If-Else If-Else Chain
+
+An extension of if-else where multiple conditions are checked in a sequence. The code block associated with the first true condition is executed.
+
+```vbnet
+    int x = 15;
+    if (x < 10) {
+        // Code to execute if x is less than 10
+    } else if (x < 20) {
+        // Code to execute if x is between 10 and 19
+    } else {
+        // Code to execute if x is 20 or greater
+    }
+```
+
+### Switch Statement
+
+The switch statement in C allows you to specify distinct cases based on the value of an expression. It is an alternative to multiple if-else if-else statements.
+
+```vbnet
+    int x = 3;
+    switch (x) {
+        case 1:
+            // Code to execute if x is 1
+            break;
+        case 2:
+            // Code to execute if x is 2
+            break;
+        case 3:
+            // Code to execute if x is 3
+            break;
+        default:
+            // Code to execute if x doesn't match any case
+    }
+```
+### Ternary Operator (?:)
+
+The ternary operator (?:) is a shorthand way to express simple if-else statements in a single line. It is used for making decisions where there are only two possible outcomes.
+
+```vbnet
+    int x = (condition) ? 5 : 6;
+```
+In this example, if the condition is true, x will be assigned the value 5; otherwise, it will be assigned the value 6.
+
+{% include note.html content="Switch Statement vs. If-Else Chain - While both can be used for similar purposes, the choice between switch and if-else depends on the specific scenario and the values being tested.
+" %}
+
+## Loops
+A **loop** is a control flow structure that allows a set of statements to be executed repeatedly as long as a specified condition is true. Loops provide a concise way to perform repetitive tasks without duplicating code.  They help improve code efficiency and readability by avoiding redundant code. Here are the types of Loops in C.
+
+### while Loop
+
+The `while` Loop executes a block of code repeatedly as long as the specified boolean expression evaluates to true.  Suitable for scenarios where the number of iterations is uncertain.
+```vbnet
+    #include <stdio.h>
+    int main() {
+        int i = 0;
+        while (i < 5) {
+            printf("%d ", i);
+            i++;
+        }
+        return 0;
+    }
+```
+**Output**: `0 1 2 3 4`
+
+### do while Loop
+
+The `do while`Loop is similar to the while loop, but guarantees the execution of the loop's body at least once. It checks the condition after the first iteration. Useful when you want to ensure the loop body executes at least once.
+
+```vbnet
+    #include <stdio.h>
+
+    int main() {
+        int i = 0;
+        do {
+            printf("%d ", i);
+            i++;
+        } while (i < 5);
+        return 0;
+    }
+``` 
+**Output**: `0 1 2 3 4`
+
+### for Loop
+
+`for` Loop is designed for iterating a specific number of times. It has three parts within the parentheses: initialization, condition, and increment/decrement. Suited for situations where the number of iterations is known beforehand.
+
+```vbnet
+    #include <stdio.h>
+
+    int main() {
+        for (int i = 0; i < 5; i++) {
+            printf("%d ", i);
+        }
+        return 0;
+    }
+``` 
+
+**Output**: `0 1 2 3 4`
+
+{% include note.html content="Be cautious of unintentional infinite loops, which execute indefinitely. Ensure there's a mechanism to exit the loop (e.g., using break). Statements like break and continue can be used to control loop execution. "
+%}
+
+## Command Line
+
+The **CS50 IDE** (Integrated Development Environment) and older versions of CS50 appliances run on **Ubuntu**, which is a flavor of the Linux operating system. 
+
+**Linux** is favored by programmers, and even though graphical user interfaces (GUIs) are available, the command line (terminal) is frequently used by programmers.
+
+### Basic Linux Commands
+* `ls` (list): Used to display the files and folders in the current directory.
+* `cd` (change directory): Navigates between directories.
+* `pwd` (present working directory): Displays the current directory path.
+* `mkdir` (make directory): Creates a new folder or directory.
+* `cp ` (copy): Copies files or directories.
+* `rm` (remove): Deletes files or directories.
+* `mv` (move): Moves or renames files or directories.
+
+### Additional Tips:
+* `ls -a`: Lists all files, including hidden ones.
+* `cd ..`: Moves up one level in the directory structure.
+* `cp -r`: Copies directories and their contents recursively.
+* `rm -r`: Removes directories and their contents recursively.
+* `mv file.txt /path/to/new/location`: Moves a file to a different directory.
+
+These commands are fundamental for navigating and managing files and directories in a Linux environment. Understanding and mastering them provides a strong foundation for working with the command line in various contexts.
