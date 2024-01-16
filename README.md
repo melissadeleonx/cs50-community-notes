@@ -24,8 +24,6 @@
   </a>
 </p>
 
-![cs50-ai-duck](images/ddb50.gif)
-
 ## Table of Contents
 
 - [About CS50 Community Notes](#about-cs50-community-notes)
