@@ -251,7 +251,7 @@ In this example, the global variable global is accessible and modifiable by both
 - **Rubber Duck Debugging**: Explaining your code or problem to someone else (or even an inanimate object) can help you see the issue from a different perspective.
 - **debug50 (CS50 Debugger)**: debug50 is a debugger specifically designed for the CS50 IDE, an environment used in the CS50 course. IDEs often provide debugging features, allowing developers to set breakpoints, inspect variables, and navigate through the code seamlessly.
 
-## How to use debug50?
+### How to use debug50?
 
 The CS50 IDE provides a helpful tool called `debug50`, it is tailored for the CS50 environment. Here are different techniques to use.
 
@@ -279,3 +279,5 @@ The CS50 IDE provides a helpful tool called `debug50`, it is tailored for the CS
 {% include note.html content="💡Regularly Update Dependencies:
 Ensure that your development environment, compilers, and libraries are up-to-date to benefit from bug fixes and improvements."
 %}
+
+## Arrays
