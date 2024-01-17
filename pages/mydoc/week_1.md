@@ -155,9 +155,22 @@ As you continue your programming journey, you'll encounter various other librari
 
 Additionally, you'll have opportunities to create your own libraries. Creating a library involves grouping related functions and data types into a separate file that can be reused across different programs. This modular approach to programming enhances code organization and reusability.
 
-## Declaration and Initialization
+## Variables: Declaration and Initialization
 
 **Declaration** and **Initialization** are two distinct concepts related to the creation and use of variables.
+
+`variables` are containers that hold data values. They have names, and their purpose is to store and manipulate data during the execution of a program. When you declare a variable, you specify its data type, and it can hold values of that type.
+
+- `int` (Integer): Stores whole numbers (e.g., -5, 0, 42).
+- `float`: Stores decimal numbers (e.g., 3.14, -0.5).
+- `char` (Character): Stores a single character (e.g., 'a', '$').
+- `double`: Stores double-precision floating-point numbers.
+
+### Variable Naming Rules
+- Must begin with a letter or underscore (_).
+- Can contain letters, numbers, and underscores.
+- Case-sensitive (e.g., total and Total are different variables).
+- Avoid using reserved keywords (e.g., int, float) as variable names.
 
 ### Declaration
 Declaration is the process of announcing the existence and characteristics of a variable to the compiler. When you declare a variable, you are essentially telling the compiler what type of data the variable will store, and you're providing a name for that variable.
