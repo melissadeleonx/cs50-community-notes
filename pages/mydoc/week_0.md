@@ -1,5 +1,5 @@
 ---
-title: CS50 Week 0 - Scratch
+title: CS50 Week 0 - Scratch and Hello World!
 tags: [getting_started, troubleshooting]
 keywords:
 summary: "Scratch is a visual programming language that allows users to create interactive stories, games, and animations. It's designed to be beginner-friendly, using a drag-and-drop interface with colorful code blocks."
@@ -10,7 +10,17 @@ folder: mydoc
 
 # CS50 Week 0: Let's Start from Scratch!
 
-## Share the Excitement 🌟
+## Hello World! 🌟
+
+```c
+
+  #include <stdio.h>
+  int main() {
+      printf("Hello, World!\n");
+      return 0;
+  }
+   
+```
 
 If you found Professor David J. Malan's Week 0 lecture amazing, share the love! Please consider spreading the word about our CS50 Community Notes website.
 
@@ -113,7 +123,7 @@ An **algorithm** is a step-by-step procedure or set of rules designed to perform
 
 Below is a simple pseudocode outlining a generic process for studying CS50 in five steps:
 
-```vbnet
+```c
    # CS50 Study Plan Pseudocode
 
    # Step 1: Set Up Environment

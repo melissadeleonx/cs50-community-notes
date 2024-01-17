@@ -26,76 +26,61 @@ The `int` data type is used for variables storing integer values.
 In C, integers occupy 4 bytes of memory (32 bits). The range of values for integers is from -2^31 to 2^31 - 1, accommodating both positive and negative values.
 This range is split into negative and positive integers, with zero included. Approximately, this covers values from negative 2 billion to positive 2 billion.
 
-<pre>
-<code>
+```c
     int number;         // Declaration
     number = 17;        // Assignment
     int anotherNumber = 42;  // Declaration and Initialization
-</code>
-</pre>
-
+```
 ### 2. Unsigned Integer ('unsigned int')
 The `unsigned int` data type is a modification of `int` that exclusively represents non-negative values. Unlike the regular int, the unsigned int excludes negative values, effectively doubling the positive range to 0 to 2^32 - 1.
 
 When you use an unsigned int, you are declaring a variable that can only hold non-negative integers. This allows for a positive range from 0 to 4,294,967,295 (2^32 - 1), as there are no negative values included.
 
-<pre>
-<code>
+```c
     unsigned int positiveNumber = 100;  // Declaration and Initialization
-</code>
-</pre>
+```
 
 ### 3. Character ('char') Data Type
 The `char` data type is used for variables storing single characters. Characters occupy 1 byte of memory (8 bits), and their values are defined by the ASCII standard.
 
-<pre>
-<code>
+```c
     char letter;           // Declaration
     letter = 'A';          // Assignment
     char symbol = '$';     // Declaration and Initialization
-</code>
-</pre>
+```
 
 ### 4. Floating Point (float and double) Data Types
 Floating-point numbers are used to represent real numbers that have a decimal point. In C, there are two primary floating-point data types: `float` and `double`.
 
 - **`float`:** This data type occupies 4 bytes of memory, providing a balance between precision and storage.
 
-    <pre>
-    <code>
+    ```c
         float pi = 3.14;       // Declaration and Initialization
-    </code>
-    </pre>
+    ```
 
 - **`double`:** The double data type, also known as double precision, uses 8 bytes of memory, offering increased precision compared to `float`. 
 
-    <pre>
-    <code>
+    ```c
         double precisePi = 3.141592653589793;  // Declaration and Initialization
-    </code>
-    </pre>
+    ```
 
 ### 5. 'Void' Type
 The `void` in C is used to indicate that a function doesn't return any value. While void itself isn't a data type for variables, it serves as a return type for functions.
 
-<pre>
-<code>
+```c
     int main(void) {
-        // Code for the main function
-        return 0;  // Indicating successful program execution to the operating system
+    // Code for the main function
+    return 0;  // Indicating successful program execution to the operating system
     }
-</code>
-</pre>
+```
 or 
 
-<pre>
-<code>
+```c
     int main() {
         // Code for the main function
         return 0;  // Indicating successful program execution to the operating system
     }
-</code>
-</pre>
+```
 
 In both cases, the void inside the parentheses indicates that main takes no parameters. It's a common practice to use void in this context to explicitly state that main does not expect any 'command-line arguments'. While the int in int main is a historical convention, the void indicates the absence of parameters in the 'function' signature.
 
@@ -103,13 +88,11 @@ These examples showcase the use of void in the main function, emphasizing that i
 
 In succeeding weeks, you'll encounter the `void` type in functions. Consider a function printMessage that prints a greeting message. Since this function doesn't return any value, it has a return type of void.
 
-<pre>
-<code>
+```c
     void printMessage() {
         printf("Hello, World!\n");
     }
-</code>
-</pre>
+```
 
 
 ### CS50 Library Data Types
@@ -119,14 +102,14 @@ CS50 provides additional data types through its library, including `bool` and `s
 ### 1. Bool ('bool') Data Type
 The `bool` data type is used for variables storing Boolean values (true or false). Booleans are fundamental in programming logic, enabling the representation of conditions and decision-making in code.
 
-```vbnet
+```c
     #include <cs50.h>
     bool isTrue = true;    // Declaration and Initialization
 ```
 ### 2. String ('string') Data Type
 The `string` data type is used for variables storing sequences of characters, representing words or text. Strings are crucial for handling textual information in programs.
 
-```vbnet
+```c
     #include <cs50.h>
     string greeting = "Hello";  // Declaration and Initialization
 ```
@@ -144,7 +127,7 @@ In C, the `#include` directive is used to include libraries in your program. Whe
 
 The CS50 library is a specific library provided by the CS50 course. It extends the capabilities of C by introducing additional data types, such as bool and string, and providing functions that simplify certain tasks. To use the CS50 library in your program, you include the following line at the beginning:
 
-```vbnet
+```c
     #include <cs50.h>
 ```
 This line tells the compiler to include the CS50 library, making its features available for use in your code. For more information on the CS50 library, you can visit [CS50 Library Documentation](https://manual.cs50.io/){:target="_blank"}.
@@ -177,7 +160,7 @@ Declaration is the process of announcing the existence and characteristics of a 
 
 In C, a variable declaration typically includes two main parts: the data type and the variable name.
 
-```vbnet
+```c
     int number;  // Declaration of an integer variable named 'number'
 ```
 In this example, int is the data type, and number is the variable name. This line informs the compiler that a variable named number of type int (integer) will be used in the program.
@@ -185,12 +168,12 @@ In this example, int is the data type, and number is the variable name. This lin
 ### Initialization
 Initialization is the process of assigning an initial value to a variable at the time of declaration or later in the program. When you initialize a variable, you provide it with an initial value.
 
-```vbnet
+```c
     int anotherNumber = 42;  // Declaration and Initialization of an integer variable
 ```
 In this example, the variable anotherNumber is not only declared but also initialized with the value 42 at the same time. Initialization is optional, and you can declare a variable first and assign a value to it later in your program.
 
-```vbnet
+```c
     int yetAnotherNumber;  // Declaration
     yetAnotherNumber = 99;  // Initialization (at a later point)
 ```
@@ -203,7 +186,7 @@ Here, the variable yetAnotherNumber is declared first and initialized with the v
 
 The assignment operator (=) is used to assign a value to a variable in C.
 
-```vbnet
+```c
     int x = 10; // Declare an integer variable x and assign the value 10 to it
 ```
 
@@ -214,7 +197,7 @@ The assignment operator (=) is used to assign a value to a variable in C.
 
 Arithmetic operators perform basic mathematical operations on numeric values.
 
-```vbnet
+```c
     int x = y + 1;  // Addition
     x = x * 5;      // Multiplication
     int m = 13 % 4; // Modulus (gives the remainder of division)
@@ -224,7 +207,7 @@ Arithmetic operators perform basic mathematical operations on numeric values.
 
 Shorthand assignment operators combine an arithmetic operation with assignment in a more concise form.
 
-```vbnet
+```c
     x += 5; // Equivalent to x = x + 5
 ```
 {% include note.html content="Shorthand Assignment Operators: They provide a concise way to update variable values and can make your code more readable." %}
@@ -234,7 +217,7 @@ Shorthand assignment operators combine an arithmetic operation with assignment i
 
 Increment (++) adds 1 to a variable, and decrement (--) subtracts 1 from a variable.
 
-```vbnet
+```c
     x++; // Equivalent to x = x + 1
 ```
 
@@ -242,7 +225,7 @@ Increment (++) adds 1 to a variable, and decrement (--) subtracts 1 from a varia
 
 The modulus operator (%) calculates the remainder when dividing two numbers.
 
-```vbnet
+```c
     int m = 13 % 4; // m will be 1 (remainder of 13 divided by 4)
 ```
 
@@ -250,7 +233,7 @@ The modulus operator (%) calculates the remainder when dividing two numbers.
 
 Boolean expressions evaluate to true or false. Logical operators perform operations on Boolean values.
 
-```vbnet
+```c
     int x = 10, y = 5;
     if (x > y && y != 0) {
         // Code to execute if both conditions are true
@@ -272,7 +255,7 @@ Boolean expressions evaluate to true or false. Logical operators perform operati
 
 Relational operators compare values and return true or false based on the comparison.
 
-```vbnet
+```c
     if (x < y) {
     // Code to execute if x is less than y
     }
@@ -298,7 +281,7 @@ Conditional statements are essential in programming because they enable your cod
 
 The `if`statement in C allows your program to make decisions based on the evaluation of a Boolean expression. If the expression is true, the code inside the curly braces is executed; otherwise, it is skipped.
 
-```vbnet
+```c
     int x = 10;
     if (x < 20) {
     // Code to execute if x is less than 20
@@ -309,7 +292,7 @@ The `if`statement in C allows your program to make decisions based on the evalua
 
 The `if-else` statement extends the if statement by providing an alternative branch of code to execute when the Boolean expression is false.
 
-```vbnet
+```c
     int x = 25;
     if (x < 20) {
         // Code to execute if x is less than 20
@@ -321,7 +304,7 @@ The `if-else` statement extends the if statement by providing an alternative bra
 
 An extension of if-else where multiple conditions are checked in a sequence. The code block associated with the first true condition is executed.
 
-```vbnet
+```c
     int x = 15;
     if (x < 10) {
         // Code to execute if x is less than 10
@@ -336,7 +319,7 @@ An extension of if-else where multiple conditions are checked in a sequence. The
 
 The switch statement in C allows you to specify distinct cases based on the value of an expression. It is an alternative to multiple if-else if-else statements.
 
-```vbnet
+```c
     int x = 3;
     switch (x) {
         case 1:
@@ -356,7 +339,7 @@ The switch statement in C allows you to specify distinct cases based on the valu
 
 The ternary operator (?:) is a shorthand way to express simple if-else statements in a single line. It is used for making decisions where there are only two possible outcomes.
 
-```vbnet
+```c
     int x = (condition) ? 5 : 6;
 ```
 In this example, if the condition is true, x will be assigned the value 5; otherwise, it will be assigned the value 6.
@@ -370,7 +353,7 @@ A **loop** is a control flow structure that allows a set of statements to be exe
 ### while Loop
 
 The `while` Loop executes a block of code repeatedly as long as the specified boolean expression evaluates to true.  Suitable for scenarios where the number of iterations is uncertain.
-```vbnet
+```c
     #include <stdio.h>
     int main() {
         int i = 0;
@@ -387,7 +370,7 @@ The `while` Loop executes a block of code repeatedly as long as the specified bo
 
 The `do while`Loop is similar to the while loop, but guarantees the execution of the loop's body at least once. It checks the condition after the first iteration. Useful when you want to ensure the loop body executes at least once.
 
-```vbnet
+```c
     #include <stdio.h>
 
     int main() {
@@ -405,7 +388,7 @@ The `do while`Loop is similar to the while loop, but guarantees the execution of
 
 `for` Loop is designed for iterating a specific number of times. It has three parts within the parentheses: initialization, condition, and increment/decrement. Suited for situations where the number of iterations is known beforehand.
 
-```vbnet
+```c
     #include <stdio.h>
 
     int main() {
