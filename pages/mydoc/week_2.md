@@ -2,7 +2,7 @@
 title: CS50 Week 2 - Arrays and the Fundamentals of C
 tags: [getting_started, troubleshooting]
 keywords:
-summary: ""
+summary: "Learning essential aspects of C, including functions, arrays, variable scopes, and command-line arguments, equips programmers with crucial skills for efficient and robust code development. "
 sidebar: mydoc_sidebar
 permalink: week_2
 folder: mydoc
@@ -334,3 +334,41 @@ Example:
 
 When passing arrays to functions in C, it's important to note that arrays are passed by reference. Functions receive the actual array, not a local copy, allowing them to manipulate array elements directly. Professor David will explore this topic further in the upcoming weeks.
 
+## Command-Line Arguments in C
+
+**Command-line arguments** provide a means for users to input data into a program when it is executed. In C programming, you can capture and utilize these command-line arguments by modifying the declaration of the `main` function. Instead of the conventional `int main(void)`, you use `int main(int argc, string argv[])`. 
+
+### argc (Argument Count)
+
+`argc` is an integer (`int`) data type which indicates the count of command-line arguments provided by the user. It is essential to note that the program name itself is considered an argument, so `argc` is always at least 1.
+
+### argv[] (Argument Vector)
+
+`argv` is an array of strings(string is a type alias for char* in C). An array containing strings, where each element represents a command-line argument. The first element `(argv[0])` is always the program name, and the last element `(argv[argc-1])` corresponds to the last argument provided by the user.
+
+```c
+    #include <stdio.h>
+
+    int main(int argc, string argv[]) {
+        // Print the program name
+        printf("Program name: %s\n", argv[0]);
+
+        // Print other command-line arguments
+        for (int i = 1; i < argc; i++) {
+            printf("Argument %d: %s\n", i, argv[i]);
+        }
+
+        return 0;
+    }
+```
+If the above program is executed with the command `./myprogram arg1 arg2 arg3`, it will produce the following output:
+
+```yaml
+    Program name: ./myprogram
+    Argument 1: arg1
+    Argument 2: arg2
+    Argument 3: arg3
+```
+All command-line arguments are treated as strings in C. If numerical operations are required, conversion functions like `atoi` or `atof` can be used.
+
+{% include note.html content="Caution should be exercised to avoid accessing elements beyond the bounds of the `argv` array, as this can lead to segmentation faults." %}
