@@ -116,7 +116,7 @@ A sample code to understand better:
 ``` 
 Here, `int` is the return type, indicating that the `add` function will produce an integer result.
 
-## Practice Problem: Valid Triangle
+### Practice Problem: Valid Triangle
 
 Consider the valid_triangle function that determines if three given side lengths can form a valid triangle:
 ```c
@@ -130,3 +130,25 @@ Consider the valid_triangle function that determines if three given side lengths
         return true;
     }
 ``` 
+- The function takes three parameters of type float representing side lengths.
+- It returns a boolean value (bool), indicating whether the given sides can form a valid triangle.
+- The logic inside the function checks two conditions: sides must be positive, and the sum of any two sides must be greater than the third.
+
+This practice problem demonstrates the use of parameters (x, y, and z) and a return type (bool) in a function to solve a specific task. Understanding these concepts is crucial for effective function implementation and usage in C programming.
+
+## Variable Scope
+
+As we learn more about functions in C programming, understanding variable scope becomes crucial. Scope refers to the characteristic of a variable that defines from which functions that variable can be accessed. There are primarily two types of variable scopes in C: **local variables** and **global variables**.
+
+### Local Variables
+
+**Local variables** can only be accessed within the functions in which they are created. Limited to the function where they are declared; other functions in the program cannot access them.
+- Local variables are typically "passed by value" when used in function calls.
+- When a function is called, it receives its own copy of the variable, not the actual variable itself.
+- Changes made to the local variable within the function do not affect the original variable in the calling function.
+
+### Global Variables
+**Global variables** can be accessed by any function in the program. They are declared outside of any particular function.
+- Global variables provide flexibility for information sharing among functions.
+- However, caution is needed, as changes to a global variable by one function can have unintended consequences for other functions.
+- Collaborative coding efforts may introduce naming conflicts when multiple functions use the same variable names.
