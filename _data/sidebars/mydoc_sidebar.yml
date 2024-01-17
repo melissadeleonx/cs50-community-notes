@@ -7,9 +7,11 @@ entries:
         <h1>study. code. repeat.</h1>
         <p>Maintained by:<br>
         <strong>Melissa De Leon</strong></p>
+        <a href="https://www.buymeacoffee.com/melissadeleonx" target="_blank">
+        <img src="images\bmc-button.svg" alt="Buy Me a Coffee" class="bmc-button" style="width: 180px; height: auto;">
+        </a>  
       </div>
-      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="melissadeleonx" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-      <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank" rel="noopener noreferrer">View My Journey</a>
+      
   
   version: CS50 Community Notes Version 1.0
   folders:
@@ -37,7 +39,7 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Introduction
+    - title: Contribute to the Community
       # url: /mydoc_introduction.html
       output: web, pdf
 
@@ -49,7 +51,7 @@ entries:
       # url: /mydoc_support.html
       output: web, pdf
 
-    - title: About the Community
+    - title: About
       # url: /mydoc_about.html
       output: web, pdf
 
