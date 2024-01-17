@@ -280,4 +280,57 @@ The CS50 IDE provides a helpful tool called `debug50`, it is tailored for the CS
 Ensure that your development environment, compilers, and libraries are up-to-date to benefit from bug fixes and improvements."
 %}
 
-## Arrays
+## Arrays in C
+
+**Arrays** are fundamental data structures in programming languages. They allow grouping values of the same data type at contiguous memory locations. Arrays provide a way to manage multiple variables of the same kind without having individual names for each.
+
+### Array Declaration
+Array declaration consists of three parts: **type**, **name**, and **size**.
+
+Syntax: `type arrayName[size];` 
+* `type` : Data type of the array elements (e.g., int, char, double).
+* `arrayName` : Name of the array.
+* `size` : Number of elements in the array.
+
+### Indexing in C Arrays
+In C, array elements are indexed **starting from 0**. If an array has `n` elements, the first element is at index 0, and the last element is at index n - 1.
+
+Here is an example of an Array Declaration:
+```c
+    int studentGrades[40];       // Array of 40 integers (index 0 to 39)
+    double menuPrices[8];        // Array of 8 doubles (index 0 to 7)
+    bool truthTable[10];         // Array of 10 Booleans (index 0 to 9)
+```
+So, for an array of 40 integers, the valid indices are from 0 to 39, for an array of 8 doubles, the valid indices are from 0 to 7, and for an array of 10 Booleans, the valid indices are from 0 to 9.
+
+### Initializing Arrays
+
+Arrays can be initialized during declaration using the special instantiation syntax.
+
+Example: `bool truthTable3[] = {false, true, true};`
+
+### Multidimensional Arrays
+
+Arrays are not restricted to a single dimension. Multidimensional arrays use multiple size specifiers.
+
+Example: `bool battleship[10][10];` represents a 10x10 grid.
+
+### Manipulating Array Elements
+
+Individual array elements can be treated as variables. Access elements using the syntax: `arrayName[index]`.
+
+Example: `truthTable[2] = false;`
+
+### Copying Arrays
+Arrays cannot be assigned to each other directly. Copying elements requires using a loop to iterate through each element.
+
+Example:
+```c
+    for (int j = 0; j < 5; j++) {
+        bar[j] = foo[j];
+    }
+```
+### Passing Arrays to Functions
+
+When passing arrays to functions in C, it's important to note that arrays are passed by reference. Functions receive the actual array, not a local copy, allowing them to manipulate array elements directly. Professor David will explore this topic further in the upcoming weeks.
+

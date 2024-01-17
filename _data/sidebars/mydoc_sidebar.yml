@@ -6,9 +6,11 @@ entries:
       <div id="header" style="color: #216f9b;">
         <h1>study. code. repeat.</h1>
         <p>Maintained by:<br>
-        <strong>CS50 Github Community</strong></p>
-        <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank" rel="noopener noreferrer">Join Us!</a>
+        <strong>Melissa De Leon</strong></p>
       </div>
+      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="melissadeleonx" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+      <a href="https://github.com/melissadeleonx/cs50-community-notes/" target="_blank" rel="noopener noreferrer">View My Journey</a>
+  
   version: CS50 Community Notes Version 1.0
   folders:
 
