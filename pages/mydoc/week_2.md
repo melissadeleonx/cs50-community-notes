@@ -147,8 +147,135 @@ As we learn more about functions in C programming, understanding variable scope 
 - When a function is called, it receives its own copy of the variable, not the actual variable itself.
 - Changes made to the local variable within the function do not affect the original variable in the calling function.
 
+Local Variables Example:
+```c
+    #include <stdio.h>
+
+    // Function declaration
+    void triple(int x);
+
+    int main() {
+        // Local variable x in main
+        int x = 5;
+
+        // Call function triple with local variable x
+        triple(x);
+
+        // Print the value of x in main
+        printf("Value of x in main: %d\n", x);
+
+        return 0;
+    }
+
+    // Function definition
+    void triple(int x) {
+        // Local variable x in triple
+        x = x * 3;
+        printf("Value of x in triple: %d\n", x);
+    }
+``` 
+**Output**
+- Value of x in triple: 15
+- Value of x in main: 5
+
+In this example, the local variable `x` in the `main` function is not affected by the changes made to the local variable `x` in the `triple` function. Each function works with its own copy of the variable.
+
 ### Global Variables
+
 **Global variables** can be accessed by any function in the program. They are declared outside of any particular function.
 - Global variables provide flexibility for information sharing among functions.
 - However, caution is needed, as changes to a global variable by one function can have unintended consequences for other functions.
 - Collaborative coding efforts may introduce naming conflicts when multiple functions use the same variable names.
+
+Global Variables Example:
+```c
+    #include <stdio.h>
+
+    // Global variable
+    float global = 0.5050;
+
+    // Function declaration
+    void tripleGlobal();
+
+    int main() {
+        // Call function tripleGlobal
+        tripleGlobal();
+
+        // Print the value of global in main
+        printf("Value of global in main: %.2f\n", global);
+
+        return 0;
+    }
+
+    // Function definition
+    void tripleGlobal() {
+        // Access and modify the global variable
+        global = global * 3;
+        printf("Value of global in tripleGlobal: %.2f\n", global);
+    }
+
+```
+**Output**
+- Value of global in tripleGlobal: 1.52
+- Value of global in main: 1.52
+
+In this example, the global variable global is accessible and modifiable by both the main function and the tripleGlobal function. Changes made to global in one function affect its value for other functions.
+
+## Debugging C Programs
+
+**Debugging** is the process of identifying, isolating, and fixing errors or bugs within a computer program. It is a crucial and iterative part of software development that aims to ensure the correct functionality of the code. Debugging involves investigating the program's behavior, identifying discrepancies between expected and actual outcomes, and resolving issues to produce a reliable and error-free application.
+
+### Key Components of Debugging
+
+1. **Bug Identification**: The first step in debugging is recognizing the existence of a bug or error in the code. Bugs can manifest as unexpected behavior, program crashes, or incorrect output.
+
+2. **Error Isolation**: Once a bug is identified, the next step is to isolate the error. This involves determining the specific section of code or the sequence of operations that leads to the undesired behavior.
+
+3. **Root Cause Analysis**: Understanding the root cause of the bug is essential. It involves tracing the execution flow, inspecting variable values, and analyzing the code logic to identify why the error occurs.
+
+4. **Code Modification**: After identifying the root cause, developers modify the code to correct the error. This may involve fixing syntax errors, adjusting logic, or addressing issues related to data flow or memory management.
+
+5. **Testing and Verification**: After making changes, the program is tested again to ensure that the bug has been successfully addressed. Testing involves running the program with various inputs to validate its correctness.
+
+6. **Iterative Process**: Debugging is often an iterative process. Developers may need to go through multiple cycles of identification, isolation, and modification to address all bugs in the code.
+
+### Debugging Tools
+
+- **Print Statements**: Inserting print statements (e.g., printf in C) at strategic points in the code to output variable values and messages for diagnostic purposes.
+- **Interactive Debuggers**: Using interactive debuggers, such as `gdb` (GNU Debugger) in C, that allow developers to pause program execution, inspect variables, and step through code line by line.
+- **Logging**: Incorporating logging mechanisms to record program events, errors, and variable values during runtime.
+- **Memory Analyzers**: Tools like Valgrind help identify memory-related issues, such as memory leaks or invalid memory access.
+- **Version Control**: Regularly commit your code using version control systems like Git. This allows you to revert to a working state if needed.
+- **Read Documentation**: Understand the functions and libraries you are using. Misuse or misunderstanding of functions can lead to subtle bugs.
+- **Peer Review**: Have colleagues or peers review your code. Fresh eyes may catch issues that you've overlooked.
+- **Rubber Duck Debugging**: Explaining your code or problem to someone else (or even an inanimate object) can help you see the issue from a different perspective.
+- **debug50 (CS50 Debugger)**: debug50 is a debugger specifically designed for the CS50 IDE, an environment used in the CS50 course. IDEs often provide debugging features, allowing developers to set breakpoints, inspect variables, and navigate through the code seamlessly.
+
+## How to use debug50?
+
+The CS50 IDE provides a helpful tool called `debug50`, it is tailored for the CS50 environment. Here are different techniques to use.
+
+1. **Conditional Breakpoints** - sometimes, you may want to break execution only when a certain condition is met. In `debug50`, you can set conditional breakpoints to pause the program when a specific variable reaches a particular value.
+<i>How to Use:</i> Right-click on a breakpoint, choose "Edit Breakpoint," and set the condition.
+2. **Watchpoints** are useful for tracking changes to a variable. If the value of the watched variable changes, the program pauses.
+<i>How to Use:</i> In `debug50`, right-click on a variable, choose "Watch Variable," and observe its behavior during execution.
+3. **Backtrace (Call Stack)** - when dealing with complex programs or function calls, understanding the call stack is crucial. It helps identify the sequence of function calls that led to the current point in the code.
+<i>How to Use:</i> In `debug50`, use the backtrace command to see the call stack. Type bt or backtrace in the debugger prompt.
+4. **Memory Inspection** - inspecting memory content can be helpful for identifying issues like buffer overflows or memory corruption.
+<i>How to Use:</i> In `debug50`, use commands like x or examine to inspect memory. For example, x/10x &variable shows ten hexadecimal words starting from the address of the variable.
+5. **Breakpoint Commands** - Associate commands with breakpoints to automate actions when the program pauses.
+<i>How to Use:</i> In `debug50`, right-click on a breakpoint, choose "Edit Breakpoint," and add commands in the command field.
+6. **Interactive Debugging** modify variable values or execute specific code while the program is paused to experiment with potential fixes.
+<i>How to Use:</i> In `debug50`, use the set variable command to change variable values interactively.
+7. **Core Dumps** - when a program crashes, generating a core dump allows post-mortem analysis. It provides a snapshot of the program's memory at the time of the crash.
+<i>How to Use:</i> Enable core dumps (ulimit -c unlimited) and use a debugger like `gdb` to analyze the core dump file.
+
+    ```bash
+        $ ulimit -c unlimited
+        $ ./your_program
+        # Analyze the core dump using gdb
+        $ gdb ./your_program core
+    ```
+{% include note.html content="💡Regularly Update Dependencies:
+Ensure that your development environment, compilers, and libraries are up-to-date to benefit from bug fixes and improvements."
+%}
