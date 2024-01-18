@@ -333,31 +333,31 @@ Most programs are ephemeral, leaving no evidence after execution. It means that 
 ### Basic File Operations
 
 #### fopen: Opening a File
-- **FILE* fopen(const char* filename, const char* mode);**
+- **`FILE* fopen(const char* filename, const char* mode);`**
 - Opens a file and returns a file pointer.
 - The mode parameter specifies the file operation (e.g., read, write, append).
-- Example: FILE* filePtr = fopen("file.txt", "r");
+- Example: `FILE* filePtr = fopen("file.txt", "r");`
 - Common modes:
-    * "r": Read
-    * "w": Write (creates a new file or truncates an existing file)
-    * "a": Append (write to the end of the file)
+    * `"r"`: Read
+    * `"w"`: Write (creates a new file or truncates an existing file)
+    * `"a"`: Append (write to the end of the file)
 
 #### fclose: Closing a File
-- **int fclose(FILE* stream);**
+- **`int fclose(FILE* stream);`**
 - Closes the file associated with the given file pointer.
 - Ensures no further I/O operations on the closed file.
-- Example: fclose(filePtr);
+- Example: `fclose(filePtr);`
 
 ### Reading Characters from a File
 
 #### fgetc: Reading a Character
-- **int fgetc(FILE* stream);**
+- **`int fgetc(FILE* stream);`**
 - Reads the next character from the file.
-- Returns the character read or EOF (End of File) if the end is reached.
-- Example: char ch = fgetc(filePtr);
+- Returns the character read or `EOF` (End of File) if the end is reached.
+- Example: `char ch = fgetc(filePtr);`
 
 #### Looping Through Characters
-- By looping through fgetc calls until EOF, entire file content can be read.
+- By looping through `fgetc` calls until `EOF`, entire file content can be read.
 - Example:
     ```c
         while ((ch = fgetc(filePtr)) != EOF) {
@@ -368,55 +368,57 @@ Most programs are ephemeral, leaving no evidence after execution. It means that 
 ### Writing Characters to a File
 
 #### **fputc: Writing a Character**
-- **int fputc(int character, FILE* stream);**
+- **`int fputc(int character, FILE* stream);`**
 - Writes the character to the file.
-- Example: fputc('A', filePtr);
+- Example: `fputc('A', filePtr);`
 
 #### Copying Files (cp Command)
-- Combining fgetc and fputc to replicate the Linux cp command.
-- Reading from one file and writing to another until EOF is reached.
+- Combining `fgetc` and `fputc` to replicate the Linux `cp` command.
+- Reading from one file and writing to another until `EOF` is reached.
 
 ### Advanced File I/O: fread and fwrite
 
 #### fread: Reading Arbitrary Data
-- size_t fread(void* ptr, size_t size, size_t count, FILE* stream);
+- **`size_t fread(void* ptr, size_t size, size_t count, FILE* stream);`**
 - Reads a specified amount of data from the file.
-- Example: fread(arr, sizeof(int), 10, filePtr);
+- Example: `fread(arr, sizeof(int), 10, filePtr);`
 - Parameters:
-    * ptr: Pointer to the memory location where data will be stored.
-    * size: Size of each unit of data to be read.
-    * count: Number of units to be read.
-    * stream: File pointer.
+    * `ptr`: Pointer to the memory location where data will be stored.
+    * `size`: Size of each unit of data to be read.
+    * `count`: Number of units to be read.
+    * `stream`: File pointer.
 
 #### fwrite: Writing Arbitrary Data
-- size_t fwrite(const void* ptr, size_t size, size_t count, FILE* stream);
+- **`size_t fwrite(const void* ptr, size_t size, size_t count, FILE* stream);`**
 - Writes a specified amount of data to the file.
-- Example: fwrite(arr, sizeof(int), 10, filePtr);
+- Example: `fwrite(arr, sizeof(int), 10, filePtr);`
 
 #### Handling Dynamic Memory
-- Dynamic allocation of memory using malloc to read/write larger chunks of data.
-- Example: fread(arr, sizeof(double), 80, filePtr);
+- Dynamic allocation of memory using `malloc` to read/write larger chunks of data.
+- Example: `fread(arr, sizeof(double), 80, filePtr);`
 
 ### Additional File I/O Functions
 #### Other Useful Functions
-- fgets and fputs: Reading/writing strings from/to a file.
-- fprintf: Using printf-style formatting to write to a file.
-- fseek and ftell: Moving to a specific position and getting the current position in a file.
-- feof: Detecting the end of a file.
-- ferror: Checking for errors during file operations.
+- `fgets` and `fputs`: Reading/writing strings from/to a file.
+- `fprintf`: Using `printf`-style formatting to write to a file.
+- `fseek` and `ftell`: Moving to a specific position and getting the current position in a file.
+- `feof`: Detecting the end of a file.
+- `ferror`: Checking for errors during file operations.
 
 ### Handling Errors and Seeking
 #### Error Handling: ferror
-- int ferror(FILE* stream);
+- **`int ferror(FILE* stream);`**
 - Checks if an error has occurred during file operations.
 - Returns a non-zero value if an error is detected.
-- Example: if (ferror(filePtr)) { /* handle error */ }
+- Example: `if (ferror(filePtr)) { /* handle error */ }`
 
 #### Moving File Position: fseek and ftell
-- int fseek(FILE* stream, long int offset, int origin);
-- Moves the file position indicator to a specified location.
-- Example: fseek(filePtr, 0, SEEK_SET); (Sets the position to the beginning of the file)
-- long int ftell(FILE* stream);
+- **`int fseek(FILE* stream, long int offset, int origin);`**
+- Moves the file position indicator to a specified location.    
+- Example: `fseek(filePtr, 0, SEEK_SET);` (Sets the position to the beginning of the file)
+- `long int ftell(FILE* stream);`
 - Returns the current position of the file position indicator.
-- Example: long int currentPosition = ftell(filePtr);
+- Example: `long int currentPosition = ftell(filePtr);`
+
+Explore additional functions in stdio.h for more specialized file handling.
 
