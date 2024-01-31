@@ -928,7 +928,9 @@ span.soft {
 }
 
 /* this part adds an icon after external links, using FontAwesome*/
-a[href^="http://"]:after, a[href^="https://"]:after {
+/* Default styling for external links */
+a[href^="http://"]:after,
+a[href^="https://"]:after {
     content: "\f08e";
     font-family: FontAwesome;
     font-weight: normal;
@@ -936,6 +938,28 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     display: inline-block;
     text-decoration: none;
     padding-left: 3px;
+}
+
+/* Buy me a coffee button styling */
+/* Exclude styling for links with the class "exclude-icon" */
+a.exclude-icon[href^="http://"]:after,
+a.exclude-icon[href^="https://"]:after {
+    content: "";  /* Empty content removes the icon */
+    padding-left: 0;
+}
+
+#bmac-section {
+    text-align: center; 
+}
+
+#bmac-section a {
+    background-color: transparent;
+}
+
+#bmac-section a:hover {
+    background-color: transparent;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 }
 
 /* Strip the outbound icon when this class is present */
