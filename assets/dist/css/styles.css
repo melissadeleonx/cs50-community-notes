@@ -1,0 +1,64 @@
+.yellow-section {
+    background-color: yellow;
+  }
+
+.btn-outline-secondary {
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-outline-secondary:hover,
+  .btn-outline-secondary:active  {
+    background-color: #ff8000;
+    border-color: #61db10;
+    border-width: 2px;
+}
+
+
+.video-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-background {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .video-background {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .video-background {
+    height: 80vh;
+  }
+}
+
+.sicily-text {
+  color: #ff8000;
+  font-family: 'Dancing Script', cursive;
+}
+
+@keyframes jumpyAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.jumpy-sun {
+  animation: jumpyAnimation 1s infinite;
+  display: inline-block;
+}

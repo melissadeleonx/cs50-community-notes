@@ -1,8 +1,8 @@
 ---
-title: "Single sourcing pages"
-tagName: single_sourcing
+title: "How to GIT"
+tagName: git
 search: exclude
-permalink: tag_single_sourcing.html
+permalink: tag_git.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
