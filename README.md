@@ -62,7 +62,7 @@ CS50 Community Notes is built using the following technologies:
 ## Getting Started
 
 ### GIT
-If you're not familiar with Git, learn the basics at **CS50: How to GIT?**
+If you're not familiar with Git, learn the basics at **[CS50: How to GIT?](https://melissadeleonx.github.io/cs50-community-notes/how-to-git.html)**
 
 ### Installing Jekyll:
 For instructions on installing Jekyll, visit the **Jekyll Installation Guide.**
