@@ -270,7 +270,7 @@ new_tuple = tuple(tuple_list)
 print(tuple_list)  # Output: [1, 2, 3]
 print(new_tuple)   # Output: (1, 2, 3)
 ```
-
+    
 ### Dictionaries
 
 

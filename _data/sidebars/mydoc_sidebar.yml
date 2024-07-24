@@ -8,9 +8,14 @@ entries:
         <p>Maintained by:<br>
         <strong>Melissa De Leon</strong></p>
         <div id="bmac-section">
-        <a href="https://www.buymeacoffee.com/melissadeleonx" target="_blank" class="exclude-icon">
-        <img src="images\bmc-button.svg" alt="Buy Me a Coffee" class="bmc-button" style="width: 180px; height: auto;">
-        </a>
+      
+        <a href="https://melissadeleon.com" target="_blank" class="exclude-icon">
+        <button class="btn btn-primary" style="background: linear-gradient(45deg, #ff7eb9, #ff65a3); color: white; border: none; padding: 25px 15px; border-radius: 5px;      font-weight: bold;
+      font-size: 15px;">      
+      <img src="images/ddb50.gif" alt="Icon" style="width: 40px; height: 40px;">
+        <span>VIEW MY PORTFOLIO</span>
+        </button>
+        </a>        
         </div>  
       </div>
       
